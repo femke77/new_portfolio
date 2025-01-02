@@ -1,0 +1,60 @@
+
+#root {
+  /* max-width: 1280px; */
+  margin: 0;
+  padding: 2rem;
+  /* text-align: center; */
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: white;
+  margin: 0;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+body {
+  background: linear-gradient(105deg,#0d324d,#1b4e74,#7f5a83,#ad94af);
+  background-size: 240% 240%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+li {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-right: 20px;
+  text-decoration: none;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+/* Overwrite padding on navbar */
+/* .MuiGrid-root.MuiGrid-item.MuiGrid-grid-md-1.css-1ik6pgl-MuiGrid-root {
+  padding-left: 0px;
+}  */
