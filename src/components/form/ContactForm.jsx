@@ -29,9 +29,10 @@ const ContactForm = () => {
 
   // Form data
   const [formData, setFormData] = useState({
-    name: '',
+    user_name: '',
     email: '',
-    message: ''
+    message: '',
+    company: ""
   });
 
   // Notification
@@ -47,31 +48,44 @@ const ContactForm = () => {
     setNotification(false);
   };
 
+  const reset = () => {
+    setFormData({
+      user_name: '',
+      email: '',
+      message: '',
+      company: ""
+    })
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setFormData({
+      user_name: '',
+      email: '',
+      message: '',
+      company: ""
+    })
     emailjs
-      .sendForm('service_zhrs8kc', 'template_27zq3kh', form.current, {
-        publicKey: 'GXLJsHQlL6ZMfdqkl',
+      .sendForm('service_l2gvv9r', 'template_itb18q5', form.current, {
+        publicKey: 'U1BX8LG4qkcj2zcW3',
       })
       .then(
         () => {
           console.log('SUCCESS!');
+          setNotification(true);
           setNotificationSeverity('success');
           setNotificationMessage('Email sent successfully!');
-          setNotification(true);
         },
         (error) => {
           console.log('FAILED...', error.text);
+          setNotification(true);
           setNotificationSeverity('error');
           setNotificationMessage('Failed to send email.');
-          setNotification(true);
         },
       );
   };
 
-  const handleChange = input => event => {
+  const handleChange = event => {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
   };;
@@ -94,10 +108,23 @@ const ContactForm = () => {
               <TextField
                 fullWidth
                 required
-                id="name"
+                value={formData.user_name}
+                id="user_name"
                 label="Name"
                 name="user_name"
-                onChange={handleChange("userName")}
+                onChange={handleChange}
+                margin="normal"
+                color='primary'
+              />
+            </Grid>
+            <Grid item>
+              <TextField
+                fullWidth
+                value={formData.company}
+                id="company"
+                label="Company"
+                name="company"
+                onChange={handleChange}
                 margin="normal"
                 color='primary'
               />
@@ -106,10 +133,12 @@ const ContactForm = () => {
               <TextField
                 fullWidth
                 required
+                type="email"
+                value={formData.email}
                 id="email"
                 label="Email"
-                name="user_email"
-                onChange={handleChange("email")}
+                name="email"
+                onChange={handleChange}
                 margin="normal"
               />
             </Grid>
@@ -117,13 +146,14 @@ const ContactForm = () => {
               <TextField
                 fullWidth
                 required
+                value={formData.message}
                 id="message"
                 label="Message"
                 name="message"
-                onChange={handleChange("message")}
+                onChange={handleChange}
                 margin="normal"
                 multiline
-                rowsMax="4"
+                rows="4"
               />
             </Grid>
             <Grid container direction="row" spacing={2} style={{ marginTop: 20 }}>
@@ -132,6 +162,7 @@ const ContactForm = () => {
                   type="reset"
                   variant="contained"
                   color="default"
+                  onClick={reset}
                 >
                   RESET
                 </Button>

@@ -43,8 +43,8 @@ export default function LeftLogo() {
       {!isMobile ? (
         // <img src={Logo} alt="Logo" style={styles.logo} />) : ('')}
         <Box sx={{display: "flex", position: "fixed"}}>
-        <Typography sx={{color: "white", fontSize: "4rem", paddingRight: "0.15rem"}}>M</Typography>
-        <Typography sx={{color: "white", fontSize: "4rem", paddingTop: "1.9rem"}}>M</Typography>
+        <Typography  sx={{color: "white", fontSize: "4rem", fontFamily: "Water Brush"}}>M</Typography>
+        <Typography sx={{color: "white", fontSize: "4rem", paddingTop: "1.9rem", fontFamily: "Water Brush"}}>M</Typography>
         </Box>
         ) : ('')}
       {/* Nav */}

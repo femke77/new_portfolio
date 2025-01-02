@@ -33,6 +33,13 @@ body {
   animation: gradient-animation 18s ease infinite;
 }
 
+.water-brush {
+  font-family: "Water Brush", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;

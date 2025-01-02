@@ -20,9 +20,9 @@ export default defineConfig({
         enabled: true,
       },
       manifest: {
-        name: "Jaya Baldwin Portfolio",
-        short_name: "Jaya Baldwin",
-        description: "Jaya Baldwin web development profile built with React",
+        name: "Meg Meyers Portfolio",
+        short_name: "Meg Meyers",
+        description: "Meg Meyers web development profile built with React",
         theme_color: "#ffffff",
         icons: [
           {

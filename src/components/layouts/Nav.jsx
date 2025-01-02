@@ -25,7 +25,7 @@ const Navigation = () => {
     scroller.scrollTo(selector, {
       duration: 500,
       smooth: true,
-      offset: -75,
+      offset: -125,
       spy: true,
     });
   };

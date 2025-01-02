@@ -27,7 +27,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: ["Poppins", "sans-serif"].join(","),
+    fontFamily: ["Poppins", "sans-serif", "Water Brush", "serif"].join(","),
   },
   breakpoints: {
     values: {
@@ -46,9 +46,10 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Layout>
-        <main>
-          <Outlet />
-        </main></Layout>
+          <main>
+            <Outlet />
+          </main>
+        </Layout>
       </ThemeProvider>
     </>
   );

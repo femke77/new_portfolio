@@ -16,7 +16,7 @@ const socialIcons = [
   // { icon: <SaveAltIcon />, label: 'Resumé', href: '#' }, // Add resume file download link
 ];
 
-const StyledTooltip = styled(({ className, ...props }) => (
+export const StyledTooltip = styled(({ className, ...props }) => (
   <Tooltip {...props} arrow classes={{ popper: className }} />
 ))(({ theme }) => ({
   [`& .${tooltipClasses.arrow}`]: {
@@ -47,7 +47,7 @@ export default function RightSocial({styles, placement, color, background}) {
       {socialIcons.map(({ icon, label, href }, index) => (
         <StyledTooltip 
           key={index} 
-          title={"Resume"} 
+          title={label} 
           placement={placement}
           arrow 
           >
@@ -66,22 +66,22 @@ export default function RightSocial({styles, placement, color, background}) {
       ))}
        <StyledTooltip 
         
-          title={"Resume"} 
-          onClick={handleDownload}
-          placement={placement}
-          arrow 
-          >
-          <Fab 
-          color={color} 
-          aria-label={"Resume"} 
-          sx={{
-            marginTop: '15px',
-            background: {background}, 
-            boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.2)'
-          }}>
-            <SaveAltIcon/>
-          </Fab>
-        </StyledTooltip>
+        title={"Resume"} 
+        onClick={handleDownload}
+        placement={placement}
+        arrow 
+        >
+        <Fab 
+        color={color} 
+        aria-label={"Resume"} 
+        sx={{
+          marginTop: '15px',
+          background: {background}, 
+          boxShadow: '0px 2px 5px rgba(0, 0, 0, 0.2)'
+        }}>
+          <SaveAltIcon/>
+        </Fab>
+      </StyledTooltip>
     </Box>
   );
 }
