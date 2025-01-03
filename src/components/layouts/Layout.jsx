@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 import { useMediaQuery } from '@mui/material';
 
 export default function Layout({ children }) {
-  const isMobile = useMediaQuery('(max-width:700px)');
+  const isMobile = useMediaQuery('(max-width:900px)');
 
   const styles = {
     rightSocials: {
@@ -19,11 +19,11 @@ export default function Layout({ children }) {
   return (
       <Grid container={true} spacing={2}>
      
-        <Grid item={true} xs={1} sm={1.5} md={1} lg={2}>
+        <Grid item={true} xs={2} sm={1.5} md={1.5} lg={2}>
           <LeftLogo />
         </Grid>
   
-        <Grid item={true} xs={11} sm={10} md={9} lg={8}>
+        <Grid item={true} xs={10} sm={9} md={8.5} lg={8}>
             {children}
         </Grid>
        

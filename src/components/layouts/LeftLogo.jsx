@@ -36,11 +36,11 @@ export default function LeftLogo() {
       {/* Logo */}
       {!isMobile ? (
         // <img src={Logo} alt="Logo" style={styles.logo} />) : ('')}
-        <Box sx={{ display: "flex", position: "fixed" }}>
+        <Box sx={{ display: "flex", position: "fixed", paddingRight: {md: "1.5rem", lg: "1rem"} }}>
           <Typography
             sx={{
               color: "white",
-              fontSize: "3.5rem",
+              fontSize: {md: "1.5rem", lg: "2.5rem"},
               fontFamily: "Water Brush",
             }}
           >
@@ -49,8 +49,8 @@ export default function LeftLogo() {
           <Typography
             sx={{
               color: "white",
-              fontSize: "3.5rem",
-              paddingTop: "1.9rem",
+              fontSize: {md: "1.5rem", lg: "2.5rem"},
+              paddingTop:{md: "1rem",lg: "1.9rem"},
               fontFamily: "Water Brush",
             }}
           >

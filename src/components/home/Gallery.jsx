@@ -65,7 +65,9 @@ export default function Gallery() {
   return (
     <Grid container={true} sx={{ justifyContent: "center" }}>
       {technologies.map((tech, index) => (
-        <StyledTooltip key={index} title={tech.split("/")[2].split("-")[0]} arrow>
+        <StyledTooltip key={index} title={tech.split("/")[4].split(".")[0]} arrow>
+          {/* PRODUCTION: */}
+        {/* <StyledTooltip key={index} title={tech.split("/")[2].split("-")[0]} arrow> */} 
           <Item key={index} >
             <img
               src={tech}

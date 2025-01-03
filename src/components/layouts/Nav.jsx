@@ -259,7 +259,7 @@ const Navigation = () => {
           )}
         </>
       ) : (
-        // d
+        // desktop view
         <nav id="navigation">
           <ul
             style={{
@@ -267,24 +267,20 @@ const Navigation = () => {
               rotate: "-90deg",
               transformOrigin: "left",
               position: "fixed",
-              top: "36.5rem",
+              top: "34.5rem",
               marginLeft: "20px",
             }}
           >
             {location !== "Contact" ? (
               <>
-                <li>
-                  {" "}
+                 <li>
                   <Button color="white">
-                    <ScrollLink
-                      to="home"
-                      spy={true}
-                      smooth={true}
-                      offset={-75}
-                      duration={500}
+                    <RouterLink
+                      to="/Contact"
+                      style={{ textDecoration: "none", color: "white" }}
                     >
-                      Home
-                    </ScrollLink>
+                      Contact
+                    </RouterLink>
                   </Button>
                 </li>
                 <li>
@@ -314,15 +310,20 @@ const Navigation = () => {
                   </Button>
                 </li>
                 <li>
+                  {" "}
                   <Button color="white">
-                    <RouterLink
-                      to="/Contact"
-                      style={{ textDecoration: "none", color: "white" }}
+                    <ScrollLink
+                      to="home"
+                      spy={true}
+                      smooth={true}
+                      offset={-75}
+                      duration={500}
                     >
-                      Contact
-                    </RouterLink>
+                      Home
+                    </ScrollLink>
                   </Button>
                 </li>
+               
               </>
             ) : (
               <>
