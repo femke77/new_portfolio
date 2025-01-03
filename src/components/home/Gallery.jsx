@@ -9,7 +9,7 @@ import react from "../../assets/icons/react.png";
 import materialUI from "../../assets/icons/materialUI.png";
 
 import bootstrap from "../../assets/icons/bootstrap.png";
-import css3 from "../../assets/icons/CSS3.png";
+import css3 from "../../assets/icons/css3.png";
 import mongoDB from "../../assets/icons/mongodb.png";
 import html5 from "../../assets/icons/HTML5.png";
 import mysql from "../../assets/icons/mysql.png";
