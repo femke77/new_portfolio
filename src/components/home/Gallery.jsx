@@ -1,11 +1,13 @@
 import Grid from "@mui/system/Unstable_Grid";
 import styled from "@mui/system/styled";
-import javascript from "../../assets/icons/JavaScript.png";
+
 // TODO rename files to make STT look better
+import javascript from '../../assets/icons/javascript.png'
 import nodeJS from "../../assets/icons/nodejs.png";
 import expressJS from "../../assets/icons/expressjs.png";
 import react from "../../assets/icons/react.png";
 import materialUI from "../../assets/icons/materialUI.png";
+
 import bootstrap from "../../assets/icons/Bootstrap.png";
 import css3 from "../../assets/icons/CSS3.png";
 import mongoDB from "../../assets/icons/mongodb.png";
@@ -63,7 +65,7 @@ export default function Gallery() {
   return (
     <Grid container={true} sx={{ justifyContent: "center" }}>
       {technologies.map((tech, index) => (
-        <StyledTooltip key={index} title={tech.split("/")[4].split(".")[0]} arrow>
+        <StyledTooltip key={index} title={tech.split("/")[2].split("-")[0]} arrow>
           <Item key={index} >
             <img
               src={tech}
