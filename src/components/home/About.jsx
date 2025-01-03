@@ -1,6 +1,6 @@
 import Grid from '@mui/system/Unstable_Grid';
 import styled from '@mui/system/styled';
-import Profile from '../../assets/images/profile-image.png'
+
 
 const Item = styled('div')(({ theme }) => ({
   background: 'transparent',

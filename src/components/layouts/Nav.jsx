@@ -12,7 +12,7 @@ import Button from "@mui/material/Button";
 import MenuIcon from "@mui/icons-material/Menu";
 import Divider from "@mui/material/Divider";
 import RightSocial from "./RightSocial.jsx";
-import Logo from "../../assets/images/jaya-logo.png";
+import { Box, Typography } from "@mui/material";
 
 const Navigation = () => {
   const path = useLocation().pathname;
@@ -44,7 +44,7 @@ const Navigation = () => {
 
   return (
     <>
-      {isMobile ? (  //mobile view
+      {isMobile ? ( //mobile view
         <>
           {location !== "Contact" ? ( //mobile view home page
             <div>
@@ -61,18 +61,43 @@ const Navigation = () => {
                 anchor="left"
                 open={openDrawer}
                 disableRestoreFocus
-                
                 onClose={() => setOpenDrawer(false)}
                 sx={{
-                 
                   "& .MuiDrawer-paper": {
                     width: "35%",
                     backgroundColor: "rgba(0, 0, 0, 0.7)",
                     padding: "1.5rem",
-                    overflow: "hidden"
+                    overflow: "hidden",
                   },
                 }}
               >
+                <Box
+                  sx={{
+                    display: "flex",
+                    marginBottom: "2rem",
+                    marginLeft: "1rem",
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      color: "white",
+                      fontSize: "3.5rem",
+                      fontFamily: "Water Brush",
+                    }}
+                  >
+                    M
+                  </Typography>
+                  <Typography
+                    sx={{
+                      color: "white",
+                      fontSize: "3.5rem",
+                      paddingTop: "1.9rem",
+                      fontFamily: "Water Brush",
+                    }}
+                  >
+                    M
+                  </Typography>
+                </Box>
                 <ul
                   style={{
                     display: "flex",
@@ -81,11 +106,6 @@ const Navigation = () => {
                     padding: "0",
                   }}
                 >
-                  <img
-                    src={Logo}
-                    alt="Logo"
-                    style={{ width: "120px", height: "auto" }}
-                  />
                   <Divider variant="center" color="#ffffff" />
                   <li>
                     {" "}
@@ -151,7 +171,8 @@ const Navigation = () => {
                 </ul>
               </Drawer>
             </div>
-          ) : (  //mobile view contact page
+          ) : (
+            //mobile view contact page
             <div>
               <Button onClick={() => setOpenDrawer(true)}>
                 <MenuIcon
@@ -172,7 +193,7 @@ const Navigation = () => {
                     width: "35%",
                     backgroundColor: "rgba(0, 0, 0, 0.7)",
                     padding: "1.5rem",
-                    overflow: "hidden"
+                    overflow: "hidden",
                   },
                 }}
               >
@@ -237,7 +258,8 @@ const Navigation = () => {
             </div>
           )}
         </>
-      ) : (  // d
+      ) : (
+        // d
         <nav id="navigation">
           <ul
             style={{
