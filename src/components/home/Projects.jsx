@@ -15,10 +15,7 @@ function ProjectText() {
 
       <h2>Projects</h2>
       <p>
-        Throughout the duration of this course I've built an array of
-        applications, both solo and within a team. We were challenged with
-        building primarily front-end, back-end and start-to-finish full-stack
-        projects.{" "}
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsum hic provident molestias. Earum labore molestias nihil adipisci officia placeat molestiae quia, cumque fugit laudantium perspiciatis, amet consectetur deserunt voluptatibus?
       </p>
     </>
   );

@@ -19,16 +19,16 @@ export default function Layout({ children }) {
   return (
       <Grid container={true} spacing={2}>
      
-        <Grid item={true} xs={2} sm={1.5} md={1.5} lg={2}>
+        <Grid item={true} xs={2} sm={1.5} md={1.5} lg={1.5}>
           <LeftLogo />
         </Grid>
   
-        <Grid item={true} xs={10} sm={9} md={8.5} lg={8}>
+        <Grid item={true} xs={10} sm={9} md={8.5} lg={9.5}>
             {children}
         </Grid>
        
         <Grid item={true} xs={0} sm={1.5} md={2} lg={2}>
-          {isMobile ? ('') : (
+          {isMobile ? (null) : (
           <RightSocial styles={styles.rightSocials} placement={'right'} color={'primary'} background={'transparent'} />)}
         </Grid>
       </Grid>
