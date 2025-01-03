@@ -1,6 +1,7 @@
 import Grid from "@mui/system/Unstable_Grid";
 import styled from "@mui/system/styled";
 import javascript from "../../assets/icons/JavaScript.png";
+// TODO rename files to make STT look better
 import nodeJS from "../../assets/icons/nodejs.png";
 import expressJS from "../../assets/icons/expressjs.png";
 import react from "../../assets/icons/react.png";
@@ -23,9 +24,9 @@ import postgres from "../../assets/icons/PostgresSQL.png"
 import firebase from "../../assets/icons/Firebase.png"
 import cypress from "../../assets/icons/Cypress.png"
 import heroku from "../../assets/icons/Heroku.png"
-
+import gsap from "../../assets/icons/gsap.png"
+// TODO extract STT to another component
 import { StyledTooltip } from "../layouts/RightSocial";
-
 
 const Item = styled("div")(({ theme }) => ({
   padding: theme.spacing(1),
@@ -54,7 +55,8 @@ const technologies = [
   redux,
   postgres,
   heroku,
-  vite
+  vite,
+  gsap
 ];
 
 export default function Gallery() {

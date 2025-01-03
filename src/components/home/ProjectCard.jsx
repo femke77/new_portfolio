@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import Chip from '@mui/material/Chip';
+import * as images from '../../assets/index.js'
 
 const styles = {
   card: {
@@ -63,7 +64,7 @@ export default function ProjectCard({ img, title, subtitle, github, website, chi
         style={styles.image}
         component="img"
         alt={title}
-        image={img}
+        image={images[img]}
       /> }
       </div>
       <CardContent>

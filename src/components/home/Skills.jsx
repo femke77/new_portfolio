@@ -5,13 +5,11 @@ import Gallery from "../home/Gallery.jsx";
 const Item = styled("div")(({ theme }) => ({
   background: "transparent",
   padding: theme.spacing(1),
-  // textAlign: 'center'
 }));
 
 function SkillsText() {
   return (
     <>
-      <h3>Experience</h3>
       <h2>Skills & Technologies</h2>
       <p>
         Transitioning into web development, I've completed a full-stack bootcamp

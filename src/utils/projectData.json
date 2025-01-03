@@ -1,0 +1,15 @@
+[
+    {
+        "img": "tutoring",
+        "title": "My Tutoring Website",
+        "subtitle": "A website I made for my tutoring business",
+        "github": "test",
+        "website": "test",
+        "chips": [
+            "ReactJS",
+            "MUI",
+            "Calendly API"
+            
+        ]
+    }
+]
