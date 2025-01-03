@@ -1,18 +1,31 @@
 import Grid from "@mui/system/Unstable_Grid";
 import styled from "@mui/system/styled";
-import javascript from "../../assets/icons/javascript.png";
+import javascript from "../../assets/icons/JavaScript.png";
 import nodeJS from "../../assets/icons/nodejs.png";
 import expressJS from "../../assets/icons/expressjs.png";
 import react from "../../assets/icons/react.png";
 import materialUI from "../../assets/icons/materialUI.png";
-import bootstrap from "../../assets/icons/bootstrap.png";
-import css3 from "../../assets/icons/css3.png";
+import bootstrap from "../../assets/icons/Bootstrap.png";
+import css3 from "../../assets/icons/CSS3.png";
 import mongoDB from "../../assets/icons/mongodb.png";
+import html5 from "../../assets/icons/HTML5.png";
 import mysql from "../../assets/icons/mysql.png";
 import sequelize from "../../assets/icons/sequelize.png";
 import github from "../../assets/icons/github.png";
 import docker from "../../assets/icons/docker.png";
+import tailwindCSS from '../../assets/icons/TailwindCSS.png'
+import handlebars from '../../assets/icons/Handlebars.png'
+import typescript from '../../assets/icons/TypeScript.png'
+import mongoose from '../../assets/icons/Mongoose.png'
+import vite from "../../assets/icons/vite.png"
+import redux from "../../assets/icons/Redux.png"
+import postgres from "../../assets/icons/PostgresSQL.png"
+import firebase from "../../assets/icons/Firebase.png"
+import cypress from "../../assets/icons/Cypress.png"
+import heroku from "../../assets/icons/Heroku.png"
+
 import { StyledTooltip } from "../layouts/RightSocial";
+
 
 const Item = styled("div")(({ theme }) => ({
   padding: theme.spacing(1),
@@ -25,12 +38,23 @@ const technologies = [
   react,
   materialUI,
   bootstrap,
+  tailwindCSS,
   css3,
   mongoDB,
   mysql,
   sequelize,
   github,
   docker,
+  handlebars,
+  typescript,
+  mongoose,
+  html5,
+  firebase,
+  cypress,
+  redux,
+  postgres,
+  heroku,
+  vite
 ];
 
 export default function Gallery() {
