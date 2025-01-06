@@ -1,21 +1,22 @@
-import Grid from "@mui/material/Grid";
-import styled from "@mui/system/styled";
-import ProjectCard from "../home/ProjectCard.jsx";
-import { Grow } from "@mui/material";
-import projectData from "../../utils/projectData.json"
+import Grid from '@mui/material/Grid';
+import styled from '@mui/system/styled';
+import ProjectCard from '../home/ProjectCard.jsx';
+import { Grow } from '@mui/material';
+import projectData from '../../utils/projectData.json';
 
-
-const Item = styled("div")(({ theme }) => ({
+const Item = styled('div')(({ theme }) => ({
   padding: theme.spacing(1),
 }));
 
 function ProjectText() {
   return (
     <>
-
       <h2>Projects</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsum hic provident molestias. Earum labore molestias nihil adipisci officia placeat molestiae quia, cumque fugit laudantium perspiciatis, amet consectetur deserunt voluptatibus?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+        ipsum hic provident molestias. Earum labore molestias nihil adipisci
+        officia placeat molestiae quia, cumque fugit laudantium perspiciatis,
+        amet consectetur deserunt voluptatibus?
       </p>
     </>
   );
@@ -78,7 +79,7 @@ export default function Projects() {
       id="projects"
       spacing={4}
       justifyContent="censter"
-      sx={{ flexWrap: "wrap" }}
+      sx={{ flexWrap: 'wrap' }}
     >
       <Grid item xs={12}>
         <Item>

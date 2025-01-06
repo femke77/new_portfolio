@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box'
+import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
@@ -9,10 +9,9 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Snackbar from '@mui/material/Snackbar';
 import Alert from '@mui/material/Alert';
 
-
 const styles = {
   contactForm: {
-    width: '100%'
+    width: '100%',
   },
   contactFrame: {
     backgroundColor: 'white',
@@ -20,8 +19,8 @@ const styles = {
     padding: '30px',
     marginTop: '20px',
     width: '100%',
-    maxWidth: '600px'
-  }
+    maxWidth: '600px',
+  },
 };
 
 const ContactForm = () => {
@@ -32,14 +31,13 @@ const ContactForm = () => {
     user_name: '',
     email: '',
     message: '',
-    company: ""
+    company: '',
   });
 
   // Notification
   const [notification, setNotification] = useState(false);
   const [notificationSeverity, setNotificationSeverity] = useState('success');
   const [notificationMessage, setNotificationMessage] = useState('');
-
 
   const handleClose = (event, reason) => {
     if (reason === 'clickaway') {
@@ -53,9 +51,9 @@ const ContactForm = () => {
       user_name: '',
       email: '',
       message: '',
-      company: ""
-    })
-  }
+      company: '',
+    });
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -63,8 +61,8 @@ const ContactForm = () => {
       user_name: '',
       email: '',
       message: '',
-      company: ""
-    })
+      company: '',
+    });
     emailjs
       .sendForm('service_l2gvv9r', 'template_itb18q5', form.current, {
         publicKey: 'U1BX8LG4qkcj2zcW3',
@@ -85,16 +83,22 @@ const ContactForm = () => {
       );
   };
 
-  const handleChange = event => {
+  const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData({ ...formData, [name]: value });
-  };;
+  };
 
   return (
     <Box>
-    <CssBaseline />
-      <Typography variant="h4" align="center" component="h1" sx={{marginTop: '3rem'}} gutterBottom>
-        {'Contact Form'.toUpperCase()}
+      <CssBaseline />
+      <Typography
+        variant="h4"
+        align="center"
+        component="h1"
+        sx={{ marginTop: '3rem' }}
+        gutterBottom
+      >
+        {'Contact Me!'.toUpperCase()}
       </Typography>
       <Grid container direction="column" justify="center" alignItems="center">
         <Grid item style={styles.contactFrame}>
@@ -114,7 +118,7 @@ const ContactForm = () => {
                 name="user_name"
                 onChange={handleChange}
                 margin="normal"
-                color='primary'
+                color="primary"
               />
             </Grid>
             <Grid item>
@@ -126,7 +130,7 @@ const ContactForm = () => {
                 name="company"
                 onChange={handleChange}
                 margin="normal"
-                color='primary'
+                color="primary"
               />
             </Grid>
             <Grid item>
@@ -156,7 +160,12 @@ const ContactForm = () => {
                 rows="4"
               />
             </Grid>
-            <Grid container direction="row" spacing={2} style={{ marginTop: 20 }}>
+            <Grid
+              container
+              direction="row"
+              spacing={2}
+              style={{ marginTop: 20 }}
+            >
               <Grid item>
                 <Button
                   type="reset"
@@ -181,7 +190,11 @@ const ContactForm = () => {
           </form>
         </Grid>
       </Grid>
-      <Snackbar open={notification} autoHideDuration={6000} onClose={handleClose}>
+      <Snackbar
+        open={notification}
+        autoHideDuration={6000}
+        onClose={handleClose}
+      >
         <Alert
           onClose={handleClose}
           severity={notificationSeverity}

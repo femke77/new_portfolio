@@ -1,1 +1,0 @@
-export {default as tutoring} from "./projectImages/tutoring.png";

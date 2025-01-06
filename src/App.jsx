@@ -1,12 +1,12 @@
-import { Outlet } from "react-router-dom";
+import { Outlet } from 'react-router-dom';
 import {
   createTheme,
   ThemeProvider,
   responsiveFontSizes,
-} from "@mui/material/styles";
-import "./App.css";
-import CssBaseline from "@mui/material/CssBaseline";
-import Layout from "./components/layouts/Layout";
+} from '@mui/material/styles';
+import './App.css';
+import CssBaseline from '@mui/material/CssBaseline';
+import Layout from './components/layouts/Layout';
 
 const theme = createTheme({
   palette: {
@@ -14,20 +14,20 @@ const theme = createTheme({
     //   default: '#EDBAAB',
     // },
     primary: {
-      main: "#000000",
+      main: '#000000',
       // light: '#EFEAE3',
       // dark: '#655446',
-      contrastText: "#ffffff",
+      contrastText: '#ffffff',
     },
     secondary: {
-      main: "#ffffff",
+      main: '#ffffff',
       // light: '#EFEAE3',
       // dark: '#655446',
-      contrastText: "#000000",
+      contrastText: '#000000',
     },
   },
   typography: {
-    fontFamily: ["Poppins", "sans-serif", "Water Brush", "serif"].join(","),
+    fontFamily: ['Poppins', 'sans-serif', 'Water Brush', 'serif'].join(','),
   },
   breakpoints: {
     values: {

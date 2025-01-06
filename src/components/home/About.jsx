@@ -1,11 +1,11 @@
-import Grid from "@mui/system/Unstable_Grid";
-import styled from "@mui/system/styled";
-import useScript from "../../hooks/UseScript";
+import Grid from '@mui/system/Unstable_Grid';
+import styled from '@mui/system/styled';
+import useScript from '../../hooks/UseScript';
 
-const Item = styled("div")(({ theme }) => ({
-  background: "transparent",
+const Item = styled('div')(({ theme }) => ({
+  background: 'transparent',
   padding: theme.spacing(1),
-  textAlign: "left",
+  textAlign: 'left',
 }));
 
 function AboutMe() {
@@ -13,7 +13,10 @@ function AboutMe() {
     <>
       <h2>About Me</h2>
       <p>
-       Award winning full stack developer and instructor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quo voluptatem delectus eaque dolor! Error, nam doloremque. Suscipit maxime sequi laboriosam iusto aut, corporis amet harum mollitia fugit possimus autem.
+        Award winning full stack developer and instructor. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Quidem quo voluptatem delectus eaque
+        dolor! Error, nam doloremque. Suscipit maxime sequi laboriosam iusto
+        aut, corporis amet harum mollitia fugit possimus autem.
       </p>
       <br />
     </>
@@ -21,7 +24,7 @@ function AboutMe() {
 }
 
 export default function About() {
-  useScript("//cdn.credly.com/assets/utilities/embed.js");
+  useScript('//cdn.credly.com/assets/utilities/embed.js');
 
   return (
     <Grid
@@ -29,8 +32,8 @@ export default function About() {
       id="about"
       spacing={2}
       sx={(theme) => ({
-        [theme.breakpoints.only("xs")]: {
-          flexDirection: "column",
+        [theme.breakpoints.only('xs')]: {
+          flexDirection: 'column',
         },
       })}
     >
@@ -38,13 +41,19 @@ export default function About() {
         <Item>
           <AboutMe />
         </Item>
-      </Grid>{" "}
+      </Grid>{' '}
       <Grid item="true" xs={12} sm={4} md={3}>
-    
-        <Item style={{ backgroundColor: "white", color: "black", marginTop: "3rem", height: "250px", width: "182px" }}>
-    
+        <Item
+          style={{
+            backgroundColor: 'white',
+            color: 'black',
+            marginTop: '3rem',
+            height: '256px',
+            width: '186px',
+          }}
+        >
           <div
-        // style={{ width: "100%", height: "100%" }}
+            // style={{ width: "100%", height: "100%" }}
             data-iframe-width="170"
             data-iframe-height="250"
             data-share-badge-id="10d343b0-6ceb-4b18-960c-a46c0b76c228"
