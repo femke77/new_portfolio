@@ -15,7 +15,7 @@ const styles = {
   },
   logo: {
     width: '120px',
-    height: 'auto',
+ 
     position: 'fixed',
   },
   up: {
@@ -39,8 +39,10 @@ export default function LeftLogo() {
         <Box
           sx={{
             display: 'flex',
+            justifyContent: 'center',
             position: 'fixed',
             paddingRight: { md: '1.5rem', lg: '1rem' },
+            margin: "0 auto"
           }}
         >
           <Typography
@@ -64,7 +66,7 @@ export default function LeftLogo() {
           </Typography>
         </Box>
       ) : (
-        ''
+        null
       )}
       {/* Nav */}
       <Navigation />
@@ -82,7 +84,7 @@ export default function LeftLogo() {
           </Fab>
         </ScrollLink>
       ) : (
-        ''
+        null
       )}
     </Grid>
   );

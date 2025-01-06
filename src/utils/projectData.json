@@ -21,7 +21,7 @@
     "subtitle": "Find new music and concerts near you.",
     "github": "https://github.com/femke77/Muzic-Xpansion",
     "website": "https://deploy-f0b72.firebaseapp.com/",
-    "chips": ["Firebase", "jQuery"]
+    "chips": ["Firebase", "jQuery", "YouTube API"]
   },
   {
     "img": "cuccio",
