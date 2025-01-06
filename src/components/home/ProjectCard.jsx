@@ -19,7 +19,7 @@ const styles = {
   image: {
     width: '100%',
     height: '100%',
-    objectFit: 'cover',
+    objectFit: 'contain',
     opacity: '1',
   },
   icons: {
@@ -65,7 +65,7 @@ export default function ProjectCard({
           </Button>
         )}
       </div>
-      <div style={styles.hover}>
+      <div>
         {img && (
           <CardMedia
             style={styles.image}

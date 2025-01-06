@@ -6,5 +6,29 @@
     "github": "https://github.com/femke77/tutoring",
     "website": "https://heartfelt-kulfi-3d2f28.netlify.app/",
     "chips": ["ReactJS", "MUI", "Calendly API"]
+  },
+  {
+    "img": "crave",
+    "title": "Crave Recipies",
+    "subtitle": "Lookup, create, and make notes on recipes.",
+    "github": "https://github.com/femke77/crave-recipes",
+    "website": "https://safe-journey-98572.herokuapp.com/",
+    "chips": ["Handlebars", "Sequelize", "ExpressJS"]
+  },
+  {
+    "img": "musicx",
+    "title": "MusicXpansion",
+    "subtitle": "Find new music and concerts near you.",
+    "github": "https://github.com/femke77/Muzic-Xpansion",
+    "website": "https://deploy-f0b72.firebaseapp.com/",
+    "chips": ["Firebase", "jQuery"]
+  },
+  {
+    "img": "cuccio",
+    "title": "Cuccio Pro",
+    "subtitle": "e-commerce site for a nail polish company.",
+    "github": "https://github.com/femke77/cuccio-pro",
+    "website": "https://cuccio-pro.herokuapp.com/",
+    "chips": ["ReactJS", "Sequelize", "ExpressJS", "Cloudinary API", "Google Auth API"]
   }
 ]
