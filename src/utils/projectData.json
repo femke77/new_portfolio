@@ -50,12 +50,12 @@
     "chips": ["Firebase", "jQuery", "YouTube API"]
   },
   {
-    "img": "portfolio",
-    "title": "My Portfolio",
-    "subtitle": "My professional portfolio PWA.",
-    "github": "https://github.com/femke77/new_portfolio",
-    "website": "https://meg-meyers.netlify.app/",
-    "chips": ["ReactJS", "MUI", "Webpack"]
+    "img": "rps",
+    "title": "Rock Paper Scissors - Mulitplayer Edition",
+    "subtitle": "Traditional RPS game with scoring & realtime chat.",
+    "github": "https://github.com/femke77/RPS-Multiplayer",
+    "website": "https://femke77.github.io/RPS-Multiplayer/",
+    "chips": ["Firebase Database", "Bootstrap", "jQuery"]
   },
   {
     "img": "cuccio",
@@ -64,6 +64,14 @@
     "github": "https://github.com/femke77/cuccio-pro",
     "website": "https://cuccio-pro.herokuapp.com/",
     "chips": ["ReactJS", "Sequelize", "ExpressJS", "Cloudinary API", "Google Auth API"]
+  },
+  {
+    "img": "portfolio",
+    "title": "My Portfolio",
+    "subtitle": "My professional portfolio PWA.",
+    "github": "https://github.com/femke77/new_portfolio",
+    "website": "https://meg-meyers.netlify.app/",
+    "chips": ["ReactJS", "MUI", "Lottie", "PWA", "Webpack"]
   }
   
 ]
