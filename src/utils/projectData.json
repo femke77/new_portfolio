@@ -13,8 +13,26 @@
     "subtitle": "Lookup, create, save and make notes on recipes.",
     "github": "https://github.com/femke77/crave-recipes",
     "website": "https://safe-journey-98572.herokuapp.com/",
-    "chips": ["Handlebars", "Sequelize", "ExpressJS"]
+    "chips": ["Handlebars", "MySQL","Sequelize", "ExpressJS"]
   },
+  {
+    "img": "adam",
+    "title": "Adam's Portfolio",
+    "subtitle": "Modern developer portfolio for a student.",
+    "github": "https://github.com/femke77/adam_portfolio",
+    "website": "https://adams-portfolio2.netlify.app/",
+    "chips": ["ReactJS", "GSAP", "MUI"]
+  },
+
+  {
+    "img": "blog",
+    "title": "Blogging Site",
+    "subtitle": "Simple blogging app with comments.",
+    "github": "https://github.com/femke77/Apollo-Mongo-Blog",
+    "website": "https://apollo-mongo-blog.onrender.com/",
+    "chips": ["ReactJS", "Apollo GraphQL", "Bootstrap", "MongoDB"]
+  },
+
   {
     "img": "readme",
     "title": "Readme Generator",
@@ -39,4 +57,5 @@
     "website": "https://cuccio-pro.herokuapp.com/",
     "chips": ["ReactJS", "Sequelize", "ExpressJS", "Cloudinary API", "Google Auth API"]
   }
+  
 ]
