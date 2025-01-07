@@ -13,7 +13,7 @@ function ProjectText() {
     <>
       <h2>Projects</h2>
       <Typography variant="body1" gutterBottom>
-        A sampling of just a few of the many projects I have worked on. Most of the projects are still being worked on.
+        A sampling of just a few of the many projects I have worked on from 2019-2025. Most projects are maintained and added to regularly. These projects represent my own unique code, not internet tutorials or AI. 
         </Typography>
     </>
   );
@@ -27,8 +27,8 @@ export default function Projects() {
       container
       id="projects"
       spacing={4}
-      justifyContent="censter"
-      sx={{ flexWrap: 'wrap', marginBottom: '3rem' }}
+      // justifyContent="center"
+      sx={{ flexWrap: 'wrap', marginBottom: '3rem', marginTop: '-8rem' }}
     >
       <Grid item xs={12}>
         <Item>

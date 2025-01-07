@@ -13,7 +13,7 @@
     "subtitle": "Lookup, create, save and make notes on recipes.",
     "github": "https://github.com/femke77/crave-recipes",
     "website": "https://safe-journey-98572.herokuapp.com/",
-    "chips": ["Handlebars", "MySQL","Sequelize", "ExpressJS"]
+    "chips": ["Handlebars", "MySQL","Sequelize", "Bulma"]
   },
   {
     "img": "adam",
