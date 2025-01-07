@@ -50,6 +50,14 @@
     "chips": ["Firebase", "jQuery", "YouTube API"]
   },
   {
+    "img": "portfolio",
+    "title": "My Portfolio",
+    "subtitle": "My professional portfolio PWA.",
+    "github": "https://github.com/femke77/new_portfolio",
+    "website": "https://meg-meyers.netlify.app/",
+    "chips": ["ReactJS", "MUI", "Webpack"]
+  },
+  {
     "img": "cuccio",
     "title": "Cuccio Pro",
     "subtitle": "E-commerce site for a nail polish company.",
