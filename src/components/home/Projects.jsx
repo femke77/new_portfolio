@@ -12,12 +12,7 @@ function ProjectText() {
   return (
     <>
       <h2>Projects</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-        ipsum hic provident molestias. Earum labore molestias nihil adipisci
-        officia placeat molestiae quia, cumque fugit laudantium perspiciatis,
-        amet consectetur deserunt voluptatibus?
-      </p>
+      
     </>
   );
 }

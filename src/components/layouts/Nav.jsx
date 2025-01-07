@@ -23,8 +23,6 @@ const Navigation = () => {
   const goToPageAndScroll = async (selector) => {
     await navigate("/");
     scroller.scrollTo(selector, {
-      duration: 500,
-      smooth: true,
       offset: -125,
       spy: true,
     });
@@ -379,6 +377,14 @@ const Navigation = () => {
                   </Button>
                 </li>
                 <li>
+                  <Button
+                    color="white"
+                    onClick={() => goToPageAndScroll("publications")}
+                  >
+                    Publications
+                  </Button>
+                </li>
+                {/* <li>
                   <Button color="white">
                     <RouterLink
                       to="/Contact"
@@ -387,7 +393,7 @@ const Navigation = () => {
                       Contact
                     </RouterLink>
                   </Button>
-                </li>
+                </li> */}
               </>
             )}
           </ul>

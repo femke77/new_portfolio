@@ -10,10 +10,18 @@
   {
     "img": "crave",
     "title": "Crave Recipies",
-    "subtitle": "Lookup, create, and make notes on recipes.",
+    "subtitle": "Lookup, create, save and make notes on recipes.",
     "github": "https://github.com/femke77/crave-recipes",
     "website": "https://safe-journey-98572.herokuapp.com/",
     "chips": ["Handlebars", "Sequelize", "ExpressJS"]
+  },
+  {
+    "img": "readme",
+    "title": "Readme Generator",
+    "subtitle": "CLI for generating a README.md file from anywhere on your computer.",
+    "github": "https://github.com/femke77/readme-generator",
+    "website": "",
+    "chips": ["NodeJS", "JavaScript", "Inquirer"]
   },
   {
     "img": "musicx",
@@ -26,7 +34,7 @@
   {
     "img": "cuccio",
     "title": "Cuccio Pro",
-    "subtitle": "e-commerce site for a nail polish company.",
+    "subtitle": "E-commerce site for a nail polish company.",
     "github": "https://github.com/femke77/cuccio-pro",
     "website": "https://cuccio-pro.herokuapp.com/",
     "chips": ["ReactJS", "Sequelize", "ExpressJS", "Cloudinary API", "Google Auth API"]
