@@ -34,6 +34,7 @@ export default function About() {
       sx={(theme) => ({
         [theme.breakpoints.only('xs')]: {
           flexDirection: 'column',
+          justifyContent: 'center',
         },
       })}
     >
@@ -42,13 +43,12 @@ export default function About() {
           <AboutMe />
         </Item>
       </Grid>{' '}
-      <Grid item="true" xs={12} sm={4} md={3}>
+      <Grid item="true" xs={12} sm={4} md={3} sx={{paddingTop: {xs: "0rem", sm: "3rem", md:'3rem'}}} >
         <Item
           style={{
             backgroundColor: 'white',
-            color: 'black',
-            marginTop: '3rem',
-            height: '256px',
+            color: 'black',    
+            height: '260px',
             width: '186px',
           }}
         >

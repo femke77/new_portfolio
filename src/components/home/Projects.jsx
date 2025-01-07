@@ -1,7 +1,7 @@
 import Grid from '@mui/material/Grid';
 import styled from '@mui/system/styled';
 import ProjectCard from '../home/ProjectCard.jsx';
-import { Grow } from '@mui/material';
+import { Grow, Typography } from '@mui/material';
 import projectData from '../../utils/projectData.json';
 
 const Item = styled('div')(({ theme }) => ({
@@ -12,6 +12,9 @@ function ProjectText() {
   return (
     <>
       <h2>Projects</h2>
+      <Typography variant="body1" gutterBottom>
+        A sampling of just a few of the many projects I have worked on. Most of the projects are still being worked on.
+        </Typography>
     </>
   );
 }

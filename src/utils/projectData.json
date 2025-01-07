@@ -30,7 +30,7 @@
     "subtitle": "Simple blogging app with comments.",
     "github": "https://github.com/femke77/Apollo-Mongo-Blog",
     "website": "https://apollo-mongo-blog.onrender.com/",
-    "chips": ["ReactJS", "Apollo GraphQL", "Bootstrap", "MongoDB"]
+    "chips": ["ReactJS", "Apollo GraphQL", "Bootstrap", "MongoDB", "Mongoose"]
   },
 
   {

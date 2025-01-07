@@ -3,7 +3,7 @@
 const Footer = () => {
   return (
     <footer style={{ textAlign: 'center', paddingTop: '3rem' }}>
-      <p>2024</p>
+      <p>&copy; 2025</p>
     </footer>
   );
 };
