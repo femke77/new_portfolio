@@ -3,7 +3,7 @@ import publicationData from '../../utils/publicationData.json';
 const Publications = () => {
 
     return (
-        <div style={{paddingTop: '2rem' }} id='publications'>
+        <div style={{paddingTop: '2rem', marginBottom: "3rem" }} id='publications'>
                 <h2>Publications</h2>
             {publicationData.map((publication, index) => (
                 <div key={index} style={{display: "flex", flexDirection: "space-between", paddingBottom: "1rem"}}>

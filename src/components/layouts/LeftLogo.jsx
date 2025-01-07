@@ -71,7 +71,7 @@ export default function LeftLogo() {
       {/* Nav */}
       <Navigation />
       {/* Return to top icon if not on contact page */}
-      {location !== 'Contact' ? (
+      {location !== 'contact' ? (
         <ScrollLink
           to="home"
           spy={true}

@@ -21,11 +21,9 @@ const Navigation = () => {
   const scroller = Scroll.scroller;
 
   const goToPageAndScroll = async (selector) => {
+    setOpenDrawer(false);
     await navigate("/");
-    scroller.scrollTo(selector, {
-      offset: -125,
-      spy: true,
-    });
+    scroller.scrollTo(selector, {});
   };
 
   const styles = {
@@ -44,7 +42,7 @@ const Navigation = () => {
     <>
       {isMobile ? ( //mobile view
         <>
-          {location !== "Contact" ? ( //mobile view home page
+          {location !== "contact" ? ( //mobile view home page
             <div>
               <Button onClick={() => setOpenDrawer(true)}>
                 <MenuIcon
@@ -165,7 +163,7 @@ const Navigation = () => {
                   <li>
                     <Button color="white">
                       <RouterLink
-                        to="/Contact"
+                        to="/contact"
                         onClick={() => setOpenDrawer(false)}
                         style={{ textDecoration: "none", color: "white" }}
                       >
@@ -186,6 +184,7 @@ const Navigation = () => {
           ) : (
             //mobile view contact page
             <div>
+              
               <Button onClick={() => setOpenDrawer(true)}>
                 <MenuIcon
                   size="large"
@@ -209,6 +208,33 @@ const Navigation = () => {
                   },
                 }}
               >
+                 <Box
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    marginBottom: "1rem",
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      color: "white",
+                      fontSize: "2rem",
+                      fontFamily: "Water Brush",
+                    }}
+                  >
+                    M
+                  </Typography>
+                  <Typography
+                    sx={{
+                      color: "white",
+                      fontSize: "2rem",
+                      paddingTop: "1.9rem",
+                      fontFamily: "Water Brush",
+                    }}
+                  >
+                    M
+                  </Typography>
+                </Box>
                 <ul
                   style={{
                     display: "flex",
@@ -217,11 +243,7 @@ const Navigation = () => {
                     padding: "0",
                   }}
                 >
-                  <img
-                    src={Logo}
-                    alt="Logo"
-                    style={{ width: "120px", height: "auto" }}
-                  />
+                 
                   <Divider variant="center" color="#ffffff" />
                   <li>
                     {" "}
@@ -249,15 +271,14 @@ const Navigation = () => {
                     </Button>
                   </li>
                   <li>
-                    <Button color="white">
-                      <RouterLink
-                        to="/Contact"
-                        style={{ textDecoration: "none", color: "white" }}
-                      >
-                        Contact
-                      </RouterLink>
+                    <Button
+                      color="white"
+                      onClick={() => goToPageAndScroll("publications")}
+                    >
+                      Publications
                     </Button>
                   </li>
+                 
                   <li>
                     <RightSocial
                       styles={styles.rightSocials}
@@ -283,12 +304,12 @@ const Navigation = () => {
               marginLeft: "20px",
             }}
           >
-            {location !== "Contact" ? (
+            {location !== "contact" ? (
               <>
                 <li>
                   <Button color="white">
                     <RouterLink
-                      to="/Contact"
+                      to="/contact"
                       style={{ textDecoration: "none", color: "white" }}
                     >
                       Contact
@@ -352,20 +373,11 @@ const Navigation = () => {
             ) : (
               <>
                 <li>
-                  {" "}
                   <Button
                     color="white"
-                    onClick={() => goToPageAndScroll("home")}
+                    onClick={() => goToPageAndScroll("publications")}
                   >
-                    Home
-                  </Button>
-                </li>
-                <li>
-                  <Button
-                    color="white"
-                    onClick={() => goToPageAndScroll("about")}
-                  >
-                    About
+                    Publications
                   </Button>
                 </li>
                 <li>
@@ -379,21 +391,20 @@ const Navigation = () => {
                 <li>
                   <Button
                     color="white"
-                    onClick={() => goToPageAndScroll("publications")}
+                    onClick={() => goToPageAndScroll("about")}
                   >
-                    Publications
+                    About
                   </Button>
                 </li>
-                {/* <li>
-                  <Button color="white">
-                    <RouterLink
-                      to="/Contact"
-                      style={{ textDecoration: "none", color: "white" }}
-                    >
-                      Contact
-                    </RouterLink>
+                <li>
+                  <Button
+                    color="white"
+                    onClick={() => goToPageAndScroll("home")}
+                  >
+                    Home
                   </Button>
-                </li> */}
+                </li>
+                
               </>
             )}
           </ul>
@@ -405,300 +416,3 @@ const Navigation = () => {
 
 export default Navigation;
 
-// import { Button } from "@mui/material";
-// import React from "react";
-// import { NavLink as RouterLink, useLocation, useNavigate } from "react-router-dom";
-// import { Link as ScrollLink } from "react-scroll";
-// import * as Scroll from "react-scroll";
-
-// const styles = {
-
-// }
-
-// const Navigation = () => {
-//   const path = useLocation().pathname;
-//   const location = path.split("/")[1];
-//   const navigate = useNavigate();
-//   const scroller = Scroll.scroller;
-
-//   const goToPageAndScroll = async (selector) => {
-//     await navigate("/");
-//     await scroller.scrollTo(selector, {
-//       duration: 500,
-//       smooth: true,
-//       offset: -75,
-//       spy: true
-//     });
-//   };
-
-//   return (
-//       <nav id="navigation">
-//         <ul
-//         style={{
-//           display: 'flex',
-//           rotate: '-90deg',
-//           transformOrigin: 'left',
-//           position: 'fixed',
-//           top: '36.5rem',
-//           marginLeft: '20px',
-//           }}>
-//           {location !== "Contact" ? (
-//             <>
-//               <li>
-//                 {" "}
-//                 <Button color="white">
-//                   <ScrollLink to="home" spy={true} smooth={true} offset={-75} duration={500}>
-//                     Home
-//                   </ScrollLink>
-//                 </Button>
-//               </li>
-//               <li>
-//                 <Button color="white">
-//                   <ScrollLink to="about" spy={true} smooth={true} offset={-75} duration={500}>
-//                     About
-//                   </ScrollLink>
-//                 </Button>
-//               </li>
-//               <li>
-//               <Button color="white">
-//                 <ScrollLink to="projects" spy={true} smooth={true} offset={-75} duration={500}>
-//                   Projects
-//                 </ScrollLink>
-//               </Button>
-//               </li>
-//               <li>
-//               <Button color="white">
-//                 <RouterLink to="/Contact" style={{textDecoration: 'none', color: 'white'}}>Contact</RouterLink>
-//               </Button>
-//               </li>
-//             </>
-//           ) : (
-//             <>
-//               <li>
-//                 {" "}
-//                 <Button color="white" onClick={() => goToPageAndScroll("home")}>Home</Button>
-//               </li>
-//               <li>
-//                 <Button color="white" onClick={() => goToPageAndScroll("about")}>About</Button>
-//               </li>
-//               <li>
-//                 <Button color="white" onClick={() => goToPageAndScroll("projects")}>Projects</Button>
-//               </li>
-//               <li>
-//                 <Button color="white">
-//                   <RouterLink to="/Contact" style={{textDecoration: 'none', color: 'white'}}>Contact</RouterLink>
-//                 </Button>
-//               </li>
-//             </>
-//           )}
-//         </ul>
-//       </nav>
-//   );
-// };
-
-// export default Navigation;
-
-// import { Box } from '@mui/system';
-// import { Link as ScrollLink } from 'react-scroll';
-// import { Link } from 'react-router-dom'
-// import { useLocation } from 'react-router-dom'
-
-// const navLinks = [
-//     { label: 'Home', anchor: 'home' },
-//     { label: 'About', anchor: 'about' },
-//     { label: 'Projects', anchor: 'projects' },
-// ];
-
-// export default function Nav() {
-//   const location = useLocation();
-//   location.pathname === '/Contact'
-//   return (
-//     <Box
-//       sx={{
-// rotate: '-90deg',
-// transformOrigin: 'left',
-// position: 'fixed',
-// top: '32rem',
-// marginLeft: '30px',
-//       }}
-//     >
-//       {navLinks.map(({ label, anchor }, index) => (
-//         <ScrollLink
-//           to={anchor}
-//           smooth={true}
-//           duration={700}
-//           key={index}
-//           style={{
-//             color: '#ffffff',
-//             fontSize: '1rem',
-//             marginRight: '20px',
-//             textDecoration: 'none',
-//             cursor: 'pointer',
-//           }}
-//         >
-//           {label}
-//         </ScrollLink>
-//       ))}
-//       <Link
-//         to="/contact"
-//         style={{
-//           color: '#ffffff',
-//           fontSize: '1rem',
-//           marginRight: '20px',
-//           textDecoration: 'none',
-//           cursor: 'pointer',
-//         }}>
-//         Contact
-//       </Link>
-//     </Box>
-//   );
-// }
-
-// import React from 'react';
-// import { Box } from '@mui/system';
-// import { Link } from 'react-router-dom'; // Correct import statement
-// import Contact from '../../pages/Contact';
-
-// // Ensure directing to contact
-// const navLinks = [
-//     { label: 'Home', anchor: '#home' },
-//     { label: 'About', anchor: '#about' },
-//     { label: 'Projects', anchor: '#projects' },
-//     { label: 'Contact', anchor: '/contact' },
-// ];
-
-// export default function Nav() {
-//   const handleClick = (event, anchor) => {
-//     event.preventDefault();
-//     const element = document.querySelector(anchor);
-//     if (element) {
-//       element.scrollIntoView({
-//         behavior: 'smooth',
-//         block: 'start',
-//       });
-//     }
-//   };
-
-//   return (
-//     <Box sx={{
-//       rotate: '-90deg',
-//       transformOrigin: 'left',
-//       position: 'fixed',
-//       top: '32rem',
-//       marginLeft: '30px'
-//     }}>
-//       {navLinks.map(({ label, anchor }, index) => (
-//         <Link to={anchor} key={index} style={{ color: '#ffffff', fontSize: '1rem', marginRight: '20px', textDecoration: 'none' }} onClick={(event) => handleClick(event, anchor)}>
-//           {label}
-//         </Link>
-//       ))}
-//     </Box>
-//   );
-// }
-
-// import React from 'react';
-// import { Box } from '@mui/system';
-// import { Link } from 'react-router-dom';
-// import Contact from '../../pages/Contact'
-
-// // Fix contact link, potentially change all to links and remove href
-// const navLinks = [
-//     { label: 'Home', anchor: '#home' },
-//     { label: 'About', anchor: '#about' },
-//     { label: 'Projects', anchor: '#projects' },
-//     { label: 'Contact', anchor: <Link to={Contact}/> },
-// ];
-
-// // Slow down transition
-// export default function Nav() {
-//   const handleClick = (event, anchor) => {
-//     event.preventDefault();
-//     const element = document.querySelector(anchor);
-//     if (element) {
-//       element.scrollIntoView({
-//         behavior: 'smooth',
-//         block: 'start',
-//       });
-//     }
-//   };
-
-//   return (
-//     <Box sx={{
-//       rotate: '-90deg',
-//       transformOrigin: 'left',
-//       position: 'fixed',
-//       top: '32rem',
-//       marginLeft: '30px'
-//     }}>
-//       {navLinks.map(({ label, anchor }, index) => (
-//         <a href={anchor} key={index} style={{ color: '#ffffff', fontSize: '1rem', marginRight: '20px', textDecoration: 'none' }} onClick={(event) => handleClick(event, anchor)}>
-//           {label}
-//         </a>
-//       ))}
-//     </Box>
-//   );
-// }
-
-// import * as React from 'react';
-// // import BottomNavigation from '@mui/material/BottomNavigation';
-// // import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-// import HomeIcon from '@mui/icons-material/Home';
-// import PersonIcon from '@mui/icons-material/Person';
-// import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
-// import ContactsIcon from '@mui/icons-material/Contacts';
-// import { Link } from 'react-router-dom';
-// import { Box } from '@mui/system';
-
-// const navIcons = [
-//     { label: 'Home', icon: <HomeIcon />, anchorTag: '#home' },
-//     { label: 'About', icon: <PersonIcon />, anchorTag: '#about'  },
-//     { label: 'Projects', icon: <LibraryBooksIcon />, anchorTag: '#projects'  },
-//     { label: 'Contact', icon: <ContactsIcon /> },
-// ]
-
-// export default function Nav() {
-//   // const [value, setValue] = React.useState(0);
-
-//   return (
-//       // <BottomNavigation
-//       //   showLabels
-//       //   value={value}
-//       //   onChange={(event, newValue) => {
-//       //     setValue(newValue);
-//       //   }}
-//       //   sx={{
-//       //       background: 'transparent',
-//       //       rotate: '-90deg',
-//       //       transformOrigin: 'left',
-//       //       position: 'fixed',
-//       //       top: '35rem',
-//       //       marginLeft: '30px'
-//       //   }}
-//       // >
-//       //   {navIcons.map(({ label }, index ) => (
-//       //       <BottomNavigationAction
-//       //       key={index}
-//       //       label={label}
-//       //       sx={{
-//       //         color: 'white',
-//       //         '.MuiBottomNavigationAction-label': {
-//       //           fontSize: '1rem',
-//       //           padding: '0.45rem'
-//       //         },
-//       //       }}
-//       //       />))}
-//       // </BottomNavigation>
-//     <Box>
-//       {navIcons.map(({ label, anchorTag }, index ) => (
-//             <Link
-//             href='#about'
-//             key={index}
-//             sx={{
-//               color: '#ffffff',
-//               fontSize: '1rem'
-//             }}>
-//               {label}
-//             </Link>
-//       ))};
-//     </Box>
-// )}
