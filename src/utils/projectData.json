@@ -13,7 +13,7 @@
     "subtitle": "Lookup, create, save and make notes on recipes.",
     "github": "https://github.com/femke77/crave-recipes",
     "website": "https://safe-journey-98572.herokuapp.com/",
-    "chips": ["Handlebars", "MySQL","Sequelize", "Bulma"]
+    "chips": ["Handlebars", "MySQL","Sequelize", "Bulma", "Passport"]
   },
   {
     "img": "adam",
@@ -30,7 +30,7 @@
     "subtitle": "Simple blogging app with comments.",
     "github": "https://github.com/femke77/Apollo-Mongo-Blog",
     "website": "https://apollo-mongo-blog.onrender.com/",
-    "chips": ["ReactJS", "Apollo GraphQL", "Bootstrap", "MongoDB", "Mongoose"]
+    "chips": ["React", "Apollo GraphQL", "TypeScript", "Mongoose"]
   },
 
   {
@@ -56,6 +56,14 @@
     "github": "https://github.com/femke77/RPS-Multiplayer",
     "website": "https://femke77.github.io/RPS-Multiplayer/",
     "chips": ["Firebase Database", "Bootstrap", "jQuery"]
+  },
+  {
+    "img": "kitty",
+    "title": "Kitty's Portfolio",
+    "subtitle": "Simple portfolio.",
+    "github": "https://github.com/femke77/kittys-portfolio",
+    "website": "https://sparkly-custard-dd3fea.netlify.app/",
+    "chips": ["ReactJS", "TailwindCSS", "Vite PWA Plugin"]
   },
   {
     "img": "cuccio",
