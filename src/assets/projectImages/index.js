@@ -8,4 +8,5 @@ export { default as blog } from './blog.png';
 export { default as portfolio } from './portfolio.png';
 export { default as rps } from './rps.png';
 export { default as kitty } from './kitty.png';
+export { default as gmail } from './gmail.png';
 

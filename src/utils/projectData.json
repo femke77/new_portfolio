@@ -13,7 +13,7 @@
     "subtitle": "Lookup, create, save and make notes on recipes.",
     "github": "https://github.com/femke77/crave-recipes",
     "website": "https://safe-journey-98572.herokuapp.com/",
-    "chips": ["Handlebars", "MySQL","Sequelize", "Bulma", "Passport"]
+    "chips": ["Handlebars", "Sequelize", "Bulma", "Passport"]
   },
   {
     "img": "adam",
@@ -29,7 +29,7 @@
     "title": "Blogging Site",
     "subtitle": "Simple blogging app with comments.",
     "github": "https://github.com/femke77/Apollo-Mongo-Blog",
-    "website": "https://apollo-mongo-blog.onrender.com/",
+    "website": "https://apollo-mongo-blogging.netlify.app/",
     "chips": ["React", "Apollo GraphQL", "TypeScript", "Mongoose"]
   },
 
@@ -48,6 +48,14 @@
     "github": "https://github.com/femke77/Muzic-Xpansion",
     "website": "https://deploy-f0b72.firebaseapp.com/",
     "chips": ["Firebase", "jQuery", "YouTube API"]
+  },
+  {
+    "img": "gmail",
+    "title": "Tampermonkey Gmail Delete",
+    "subtitle": "This script automates deletion of old emails up to a chosen number.",
+    "github": "https://github.com/femke77/google-delete-tm-userscript",
+    "website": "",
+    "chips": ["Tampermonkey", "JavaScript"]
   },
   {
     "img": "rps",
