@@ -12,7 +12,7 @@ function ProjectText() {
   return (
     <>
       <h2>Projects</h2>
-      <Typography variant="body1" gutterBottom>
+      <Typography variant='body1' gutterBottom>
         A sampling of just a few of the many projects I have worked on from
         2019-2025. Most projects are maintained and added to regularly. These
         projects represent my own unique code, not internet tutorials or AI.
@@ -25,7 +25,7 @@ export default function Projects() {
   return (
     <Grid
       container
-      id="projects"
+      id='projects'
       spacing={4}
       // justifyContent="center"
       sx={{ flexWrap: 'wrap', marginBottom: '3rem', marginTop: '-8rem' }}

@@ -92,18 +92,18 @@ const ContactForm = () => {
     <Box>
       <CssBaseline />
       <Typography
-        variant="h4"
-        align="center"
-        component="h1"
+        variant='h4'
+        align='center'
+        component='h1'
         sx={{ marginTop: '3rem' }}
         gutterBottom
       >
         {'Contact Me!'.toUpperCase()}
       </Typography>
-      <Grid container direction="column" justify="center" alignItems="center">
+      <Grid container direction='column' justify='center' alignItems='center'>
         <Grid item style={styles.contactFrame}>
           <form
-            id="contact-form"
+            id='contact-form'
             ref={form}
             style={styles.contactForm}
             onSubmit={sendEmail}
@@ -113,37 +113,37 @@ const ContactForm = () => {
                 fullWidth
                 required
                 value={formData.user_name}
-                id="user_name"
-                label="Name"
-                name="user_name"
+                id='user_name'
+                label='Name'
+                name='user_name'
                 onChange={handleChange}
-                margin="normal"
-                color="primary"
+                margin='normal'
+                color='primary'
               />
             </Grid>
             <Grid item>
               <TextField
                 fullWidth
                 value={formData.company}
-                id="company"
-                label="Company"
-                name="company"
+                id='company'
+                label='Company'
+                name='company'
                 onChange={handleChange}
-                margin="normal"
-                color="primary"
+                margin='normal'
+                color='primary'
               />
             </Grid>
             <Grid item>
               <TextField
                 fullWidth
                 required
-                type="email"
+                type='email'
                 value={formData.email}
-                id="email"
-                label="Email"
-                name="email"
+                id='email'
+                label='Email'
+                name='email'
                 onChange={handleChange}
-                margin="normal"
+                margin='normal'
               />
             </Grid>
             <Grid item>
@@ -151,26 +151,26 @@ const ContactForm = () => {
                 fullWidth
                 required
                 value={formData.message}
-                id="message"
-                label="Message"
-                name="message"
+                id='message'
+                label='Message'
+                name='message'
                 onChange={handleChange}
-                margin="normal"
+                margin='normal'
                 multiline
-                rows="4"
+                rows='4'
               />
             </Grid>
             <Grid
               container
-              direction="row"
+              direction='row'
               spacing={2}
               style={{ marginTop: 20 }}
             >
               <Grid item>
                 <Button
-                  type="reset"
-                  variant="contained"
-                  color="default"
+                  type='reset'
+                  variant='contained'
+                  color='default'
                   onClick={reset}
                 >
                   RESET
@@ -178,10 +178,10 @@ const ContactForm = () => {
               </Grid>
               <Grid item>
                 <Button
-                  type="submit"
-                  value="send"
-                  variant="contained"
-                  color="primary"
+                  type='submit'
+                  value='send'
+                  variant='contained'
+                  color='primary'
                 >
                   Submit
                 </Button>

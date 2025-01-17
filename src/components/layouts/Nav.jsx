@@ -46,15 +46,15 @@ const Navigation = () => {
             <div>
               <Button onClick={() => setOpenDrawer(true)}>
                 <MenuIcon
-                  size="large"
-                  edge="start"
-                  color="secondary"
-                  aria-label="menu"
+                  size='large'
+                  edge='start'
+                  color='secondary'
+                  aria-label='menu'
                   sx={{ position: 'fixed', left: '20px' }}
                 />
               </Button>
               <Drawer
-                anchor="left"
+                anchor='left'
                 open={openDrawer}
                 disableRestoreFocus
                 onClose={() => setOpenDrawer(false)}
@@ -102,12 +102,12 @@ const Navigation = () => {
                     padding: '0',
                   }}
                 >
-                  <Divider variant="center" color="#ffffff" />
+                  <Divider variant='center' color='#ffffff' />
                   <li>
                     {' '}
-                    <Button color="white">
+                    <Button color='white'>
                       <ScrollLink
-                        to="home"
+                        to='home'
                         spy={true}
                         smooth={true}
                         offset={-75}
@@ -119,9 +119,9 @@ const Navigation = () => {
                     </Button>
                   </li>
                   <li>
-                    <Button color="white">
+                    <Button color='white'>
                       <ScrollLink
-                        to="about"
+                        to='about'
                         spy={true}
                         smooth={true}
                         offset={-75}
@@ -133,9 +133,9 @@ const Navigation = () => {
                     </Button>
                   </li>
                   <li>
-                    <Button color="white">
+                    <Button color='white'>
                       <ScrollLink
-                        to="projects"
+                        to='projects'
                         spy={true}
                         smooth={true}
                         offset={-75}
@@ -147,9 +147,9 @@ const Navigation = () => {
                     </Button>
                   </li>
                   <li>
-                    <Button color="white">
+                    <Button color='white'>
                       <ScrollLink
-                        to="publications"
+                        to='publications'
                         spy={true}
                         smooth={true}
                         offset={-75}
@@ -161,9 +161,9 @@ const Navigation = () => {
                     </Button>
                   </li>
                   <li>
-                    <Button color="white">
+                    <Button color='white'>
                       <RouterLink
-                        to="/contact"
+                        to='/contact'
                         onClick={() => setOpenDrawer(false)}
                         style={{ textDecoration: 'none', color: 'white' }}
                       >
@@ -186,15 +186,15 @@ const Navigation = () => {
             <div>
               <Button onClick={() => setOpenDrawer(true)}>
                 <MenuIcon
-                  size="large"
-                  edge="start"
-                  color="secondary"
-                  aria-label="menu"
+                  size='large'
+                  edge='start'
+                  color='secondary'
+                  aria-label='menu'
                   sx={{ position: 'fixed', left: '20px' }}
                 />
               </Button>
               <Drawer
-                anchor="left"
+                anchor='left'
                 open={openDrawer}
                 disableRestoreFocus
                 onClose={() => setOpenDrawer(false)}
@@ -242,11 +242,11 @@ const Navigation = () => {
                     padding: '0',
                   }}
                 >
-                  <Divider variant="center" color="#ffffff" />
+                  <Divider variant='center' color='#ffffff' />
                   <li>
                     {' '}
                     <Button
-                      color="white"
+                      color='white'
                       onClick={() => goToPageAndScroll('home')}
                     >
                       Home
@@ -254,7 +254,7 @@ const Navigation = () => {
                   </li>
                   <li>
                     <Button
-                      color="white"
+                      color='white'
                       onClick={() => goToPageAndScroll('about')}
                     >
                       About
@@ -262,7 +262,7 @@ const Navigation = () => {
                   </li>
                   <li>
                     <Button
-                      color="white"
+                      color='white'
                       onClick={() => goToPageAndScroll('projects')}
                     >
                       Projects
@@ -270,7 +270,7 @@ const Navigation = () => {
                   </li>
                   <li>
                     <Button
-                      color="white"
+                      color='white'
                       onClick={() => goToPageAndScroll('publications')}
                     >
                       Publications
@@ -291,7 +291,10 @@ const Navigation = () => {
         </>
       ) : (
         // desktop view
-        <nav id="navigation" style={{display: 'flex', alignItems:'center', height: '100vh'}}>
+        <nav
+          id='navigation'
+          style={{ display: 'flex', alignItems: 'center', height: '100vh' }}
+        >
           <ul
             style={{
               display: 'flex',
@@ -301,17 +304,15 @@ const Navigation = () => {
               // top: '39.5rem',
               marginLeft: '20px',
               top: '50%',
-              left: '-240px'
-           
-              
+              left: '-240px',
             }}
           >
             {location !== 'contact' ? (
               <>
                 <li>
-                  <Button color="white">
+                  <Button color='white'>
                     <RouterLink
-                      to="/contact"
+                      to='/contact'
                       style={{ textDecoration: 'none', color: 'white' }}
                     >
                       Contact
@@ -319,9 +320,9 @@ const Navigation = () => {
                   </Button>
                 </li>
                 <li>
-                  <Button color="white">
+                  <Button color='white'>
                     <ScrollLink
-                      to="publications"
+                      to='publications'
                       spy={true}
                       smooth={true}
                       offset={-75}
@@ -332,9 +333,9 @@ const Navigation = () => {
                   </Button>
                 </li>
                 <li>
-                  <Button color="white">
+                  <Button color='white'>
                     <ScrollLink
-                      to="projects"
+                      to='projects'
                       spy={true}
                       smooth={true}
                       offset={-75}
@@ -345,9 +346,9 @@ const Navigation = () => {
                   </Button>
                 </li>
                 <li>
-                  <Button color="white">
+                  <Button color='white'>
                     <ScrollLink
-                      to="about"
+                      to='about'
                       spy={true}
                       smooth={true}
                       offset={-75}
@@ -359,9 +360,9 @@ const Navigation = () => {
                 </li>
                 <li>
                   {' '}
-                  <Button color="white">
+                  <Button color='white'>
                     <ScrollLink
-                      to="home"
+                      to='home'
                       spy={true}
                       smooth={true}
                       offset={-75}
@@ -376,7 +377,7 @@ const Navigation = () => {
               <>
                 <li>
                   <Button
-                    color="white"
+                    color='white'
                     onClick={() => goToPageAndScroll('publications')}
                   >
                     Publications
@@ -384,7 +385,7 @@ const Navigation = () => {
                 </li>
                 <li>
                   <Button
-                    color="white"
+                    color='white'
                     onClick={() => goToPageAndScroll('projects')}
                   >
                     Projects
@@ -392,7 +393,7 @@ const Navigation = () => {
                 </li>
                 <li>
                   <Button
-                    color="white"
+                    color='white'
                     onClick={() => goToPageAndScroll('about')}
                   >
                     About
@@ -400,7 +401,7 @@ const Navigation = () => {
                 </li>
                 <li>
                   <Button
-                    color="white"
+                    color='white'
                     onClick={() => goToPageAndScroll('home')}
                   >
                     Home

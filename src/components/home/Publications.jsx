@@ -2,7 +2,7 @@ import publicationData from '../../utils/publicationData.json';
 
 const Publications = () => {
   return (
-    <div style={{ paddingTop: '2rem', marginBottom: '3rem' }} id="publications">
+    <div style={{ paddingTop: '2rem', marginBottom: '3rem' }} id='publications'>
       <h2>Publications</h2>
       {publicationData.map((publication, index) => (
         <div
@@ -17,8 +17,8 @@ const Publications = () => {
           <a
             style={{ flexBasis: '50%', textAlign: 'right', color: 'white' }}
             href={publication.link}
-            target="_blank"
-            rel="noreferrer"
+            target='_blank'
+            rel='noreferrer'
           >
             Read more
           </a>

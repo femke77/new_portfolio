@@ -37,7 +37,7 @@ export default function About() {
   return (
     <Grid
       container={true}
-      id="about"
+      id='about'
       spacing={2}
       sx={(theme) => ({
         [theme.breakpoints.only('xs')]: {
@@ -46,13 +46,13 @@ export default function About() {
         },
       })}
     >
-      <Grid item="true" xs={12} sm={8} md={9}>
+      <Grid item='true' xs={12} sm={8} md={9}>
         <Item>
           <AboutMe />
         </Item>
       </Grid>{' '}
       <Grid
-        item="true"
+        item='true'
         xs={12}
         sm={4}
         md={3}
@@ -68,10 +68,10 @@ export default function About() {
         >
           <div
             // style={{ width: "100%", height: "100%" }}
-            data-iframe-width="170"
-            data-iframe-height="250"
-            data-share-badge-id="10d343b0-6ceb-4b18-960c-a46c0b76c228"
-            data-share-badge-host="https://www.credly.com"
+            data-iframe-width='170'
+            data-iframe-height='250'
+            data-share-badge-id='10d343b0-6ceb-4b18-960c-a46c0b76c228'
+            data-share-badge-host='https://www.credly.com'
           ></div>
         </Item>
       </Grid>

@@ -31,14 +31,14 @@ export default function Intro() {
   };
 
   return (
-    <Grid container={true} id="home" spacing={2}>
+    <Grid container={true} id='home' spacing={2}>
       <Grid xs={12} sm={10} md={8}>
         <Item sx={{ textAlign: 'left' }}>
-          <Typography component="h1" sx={{ fontSize: '2rem' }}>
+          <Typography component='h1' sx={{ fontSize: '2rem' }}>
             Meg Meyers
           </Typography>
           <Typography
-            component="h1"
+            component='h1'
             sx={{
               fontSize: { xs: '3rem', sm: '4rem', md: '5rem' },
               fontWeight: '600',
@@ -48,7 +48,7 @@ export default function Intro() {
             Software
           </Typography>
           <Typography
-            component="h1"
+            component='h1'
             sx={{
               fontSize: { xs: '3rem', sm: '4rem', md: '5rem' },
               fontWeight: '600',

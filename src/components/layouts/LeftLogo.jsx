@@ -43,7 +43,6 @@ export default function LeftLogo() {
             position: 'fixed',
             paddingRight: { md: '1.5rem', lg: '1rem' },
             margin: '0 auto',
-            
           }}
         >
           <Typography
@@ -72,13 +71,13 @@ export default function LeftLogo() {
       {/* Return to top icon if not on contact page */}
       {location !== 'contact' ? (
         <ScrollLink
-          to="home"
+          to='home'
           spy={true}
           smooth={true}
           offset={-75}
           duration={500}
         >
-          <Fab color="primary" aria-label="up" style={styles.up}>
+          <Fab color='primary' aria-label='up' style={styles.up}>
             <KeyboardArrowUpIcon />
           </Fab>
         </ScrollLink>

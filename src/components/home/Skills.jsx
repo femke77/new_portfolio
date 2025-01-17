@@ -24,7 +24,7 @@ export default function Skills() {
   return (
     <Grid
       container={true}
-      id="skills"
+      id='skills'
       sx={{ display: 'column', mb: '9rem' }}
       spacing={2}
     >

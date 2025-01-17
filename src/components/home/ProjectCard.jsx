@@ -42,12 +42,12 @@ export default function ProjectCard({
     <Card style={styles.card} elevation={5}>
       <div style={styles.icons}>
         <Button
-          size="small"
+          size='small'
           sx={{ color: '#ffffff' }}
-          aria-label="github repository"
+          aria-label='github repository'
           href={github}
-          target="_blank"
-          rel="noopener noreferrer"
+          target='_blank'
+          rel='noopener noreferrer'
         >
           <GitHubIcon />
         </Button>
@@ -55,24 +55,24 @@ export default function ProjectCard({
           title &&
           (title !== 'My Portfolio' ? (
             <Button
-              size="small"
+              size='small'
               sx={{ color: '#ffffff' }}
-              aria-label="active web application"
+              aria-label='active web application'
               href={website}
-              target="_blank"
-              rel="noopener noreferrer"
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <ArrowOutwardIcon />
               View Site
             </Button>
           ) : (
             <Button
-              size="small"
+              size='small'
               sx={{ color: '#ffffff' }}
-              aria-label="active web application"
+              aria-label='active web application'
               href={website}
-              target="_blank"
-              rel="noopener noreferrer"
+              target='_blank'
+              rel='noopener noreferrer'
             >
               You Are Here!
             </Button>
@@ -82,7 +82,7 @@ export default function ProjectCard({
         {img && (
           <CardMedia
             style={styles.image}
-            component="img"
+            component='img'
             alt={title}
             image={images[img]}
           />
@@ -91,13 +91,13 @@ export default function ProjectCard({
       <CardContent>
         <Typography
           gutterBottom
-          variant="h5"
-          component="div"
+          variant='h5'
+          component='div'
           sx={{ color: '#ffffff' }}
         >
           {title}
         </Typography>
-        <Typography variant="body2">{subtitle}</Typography>
+        <Typography variant='body2'>{subtitle}</Typography>
       </CardContent>
       <CardActions>
         <div>
