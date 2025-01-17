@@ -2,7 +2,7 @@
   {
     "img": "tutoring",
     "title": "Lucky Cat Ventures Tutoring",
-    "subtitle": "A website I made for my tutoring business.",
+    "subtitle": "A website for my tutoring business.",
     "github": "https://github.com/femke77/tutoring",
     "website": "https://heartfelt-kulfi-3d2f28.netlify.app/",
     "chips": ["ReactJS", "MUI", "Calendly API"]
@@ -30,7 +30,7 @@
     "subtitle": "Simple blogging app with comments.",
     "github": "https://github.com/femke77/Apollo-Mongo-Blog",
     "website": "https://apollo-mongo-blogging.netlify.app/",
-    "chips": ["React", "Apollo GraphQL", "TypeScript", "Mongoose"]
+    "chips": ["Headless", "React", "Apollo GraphQL", "TypeScript", "Mongoose"]
   },
 
   {
@@ -42,17 +42,17 @@
     "chips": ["NodeJS", "JavaScript", "Inquirer"]
   },
   {
-    "img": "musicx",
-    "title": "MusicXpansion",
-    "subtitle": "Find new music and concerts near you.",
-    "github": "https://github.com/femke77/Muzic-Xpansion",
-    "website": "https://deploy-f0b72.firebaseapp.com/",
-    "chips": ["Firebase", "jQuery", "YouTube API"]
+    "img": "pawsome",
+    "title": "Pawsome Pets Adoption Services",
+    "subtitle": "Find the pet of your dreams.",
+    "github": "https://github.com/femke77/pet-adoption",
+    "website": "https://pawsome-pets.netlify.app/",
+    "chips": ["Headless", "React", "TailwindCSS", "Sequelize"]
   },
   {
     "img": "gmail",
     "title": "Tampermonkey Gmail Delete",
-    "subtitle": "This script automates deletion of old emails up to a chosen number.",
+    "subtitle": "This script automates deletion of old emails.",
     "github": "https://github.com/femke77/google-delete-tm-userscript",
     "website": "",
     "chips": ["Tampermonkey", "JavaScript"]
@@ -64,6 +64,14 @@
     "github": "https://github.com/femke77/RPS-Multiplayer",
     "website": "https://femke77.github.io/RPS-Multiplayer/",
     "chips": ["Firebase Database", "Bootstrap", "jQuery"]
+  },
+  {
+    "img": "musicx",
+    "title": "MusicXpansion",
+    "subtitle": "Find new music and concerts near you.",
+    "github": "https://github.com/femke77/Muzic-Xpansion",
+    "website": "https://deploy-f0b72.firebaseapp.com/",
+    "chips": ["Firebase", "jQuery", "YouTube API"]
   },
   {
     "img": "kitty",
