@@ -15,7 +15,7 @@ const styles = {
   },
   logo: {
     width: '120px',
- 
+
     position: 'fixed',
   },
   up: {
@@ -42,7 +42,8 @@ export default function LeftLogo() {
             justifyContent: 'center',
             position: 'fixed',
             paddingRight: { md: '1.5rem', lg: '1rem' },
-            margin: "0 auto"
+            margin: '0 auto',
+            
           }}
         >
           <Typography
@@ -65,9 +66,7 @@ export default function LeftLogo() {
             M
           </Typography>
         </Box>
-      ) : (
-        null
-      )}
+      ) : null}
       {/* Nav */}
       <Navigation />
       {/* Return to top icon if not on contact page */}
@@ -83,9 +82,7 @@ export default function LeftLogo() {
             <KeyboardArrowUpIcon />
           </Fab>
         </ScrollLink>
-      ) : (
-        null
-      )}
+      ) : null}
     </Grid>
   );
 }

@@ -1,11 +1,11 @@
-import Grid from "@mui/system/Unstable_Grid";
-import styled from "@mui/system/styled";
-import useScript from "../../hooks/UseScript";
+import Grid from '@mui/system/Unstable_Grid';
+import styled from '@mui/system/styled';
+import useScript from '../../hooks/UseScript';
 
-const Item = styled("div")(({ theme }) => ({
-  background: "transparent",
+const Item = styled('div')(({ theme }) => ({
+  background: 'transparent',
   padding: theme.spacing(1),
-  textAlign: "left",
+  textAlign: 'left',
 }));
 
 function AboutMe() {
@@ -32,7 +32,7 @@ function AboutMe() {
 }
 
 export default function About() {
-  useScript("//cdn.credly.com/assets/utilities/embed.js");
+  useScript('//cdn.credly.com/assets/utilities/embed.js');
 
   return (
     <Grid
@@ -40,9 +40,9 @@ export default function About() {
       id="about"
       spacing={2}
       sx={(theme) => ({
-        [theme.breakpoints.only("xs")]: {
-          flexDirection: "column",
-          justifyContent: "center",
+        [theme.breakpoints.only('xs')]: {
+          flexDirection: 'column',
+          justifyContent: 'center',
         },
       })}
     >
@@ -50,20 +50,20 @@ export default function About() {
         <Item>
           <AboutMe />
         </Item>
-      </Grid>{" "}
+      </Grid>{' '}
       <Grid
         item="true"
         xs={12}
         sm={4}
         md={3}
-        sx={{ paddingTop: { xs: "0rem", sm: "3rem", md: "3rem" } }}
+        sx={{ paddingTop: { xs: '0rem', sm: '3rem', md: '3rem' } }}
       >
         <Item
           style={{
-            backgroundColor: "white",
-            color: "black",
-            height: "260px",
-            width: "186px",
+            backgroundColor: 'white',
+            color: 'black',
+            height: '260px',
+            width: '186px',
           }}
         >
           <div

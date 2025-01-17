@@ -10,16 +10,11 @@ const Item = styled('div')(({ theme }) => ({
   padding: theme.spacing(1),
 }));
 
-
 export default function Gallery() {
   return (
     <Grid container={true} sx={{ justifyContent: 'center' }}>
       {Object.values(icons).map((path, index) => (
-        <StyledTooltip
-          key={index}
-          title={Object.keys(icons)[index]}
-          arrow
-        >
+        <StyledTooltip key={index} title={Object.keys(icons)[index]} arrow>
           <Item key={index}>
             <img
               src={path}

@@ -1,19 +1,19 @@
-import LeftLogo from "./LeftLogo.jsx";
-import RightSocial from "./RightSocial.jsx";
-import Grid from "@mui/material/Grid";
-import { useMediaQuery } from "@mui/material";
-import Footer from "./Footer.jsx";
+import LeftLogo from './LeftLogo.jsx';
+import RightSocial from './RightSocial.jsx';
+import Grid from '@mui/material/Grid';
+import { useMediaQuery } from '@mui/material';
+import Footer from './Footer.jsx';
 
 export default function Layout({ children }) {
-  const isMobile = useMediaQuery("(max-width:900px)");
+  const isMobile = useMediaQuery('(max-width:900px)');
 
   const styles = {
     rightSocials: {
-      display: "flex",
-      flexDirection: "column",
-      position: "fixed",
-      right: "50px",
-      top: "25vh",
+      display: 'flex',
+      flexDirection: 'column',
+      position: 'fixed',
+      right: '50px',
+      top: '25vh',
     },
   };
 
@@ -32,9 +32,9 @@ export default function Layout({ children }) {
           {isMobile ? null : (
             <RightSocial
               styles={styles.rightSocials}
-              placement={"right"}
-              color={"primary"}
-              background={"transparent"}
+              placement={'right'}
+              color={'primary'}
+              background={'transparent'}
             />
           )}
         </Grid>

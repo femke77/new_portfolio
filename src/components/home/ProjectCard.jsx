@@ -1,32 +1,32 @@
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
-import Chip from "@mui/material/Chip";
-import * as images from "../../assets/projectImages/index.js";
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
+import Chip from '@mui/material/Chip';
+import * as images from '../../assets/projectImages/index.js';
 
 const styles = {
   card: {
-    background: "transparent",
-    borderRadius: "12px",
-    height: "100%",
-    alignSelf: "stretch",
+    background: 'transparent',
+    borderRadius: '12px',
+    height: '100%',
+    alignSelf: 'stretch',
   },
   image: {
-    width: "100%",
-    height: "100%",
-    objectFit: "contain",
-    opacity: "1",
+    width: '100%',
+    height: '100%',
+    objectFit: 'contain',
+    opacity: '1',
   },
   icons: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between",
-    padding: "5px",
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    padding: '5px',
   },
 };
 
@@ -43,7 +43,7 @@ export default function ProjectCard({
       <div style={styles.icons}>
         <Button
           size="small"
-          sx={{ color: "#ffffff" }}
+          sx={{ color: '#ffffff' }}
           aria-label="github repository"
           href={github}
           target="_blank"
@@ -53,10 +53,10 @@ export default function ProjectCard({
         </Button>
         {website &&
           title &&
-          (title !== "My Portfolio" ? (
+          (title !== 'My Portfolio' ? (
             <Button
               size="small"
-              sx={{ color: "#ffffff" }}
+              sx={{ color: '#ffffff' }}
               aria-label="active web application"
               href={website}
               target="_blank"
@@ -68,13 +68,12 @@ export default function ProjectCard({
           ) : (
             <Button
               size="small"
-              sx={{ color: "#ffffff" }}
+              sx={{ color: '#ffffff' }}
               aria-label="active web application"
               href={website}
               target="_blank"
               rel="noopener noreferrer"
             >
-          
               You Are Here!
             </Button>
           ))}
@@ -94,7 +93,7 @@ export default function ProjectCard({
           gutterBottom
           variant="h5"
           component="div"
-          sx={{ color: "#ffffff" }}
+          sx={{ color: '#ffffff' }}
         >
           {title}
         </Typography>
@@ -107,9 +106,9 @@ export default function ProjectCard({
               key={index}
               label={chip}
               style={{
-                marginRight: "0.02rem",
-                marginBottom: "0.5rem",
-                color: "#ffffff",
+                marginRight: '0.02rem',
+                marginBottom: '0.5rem',
+                color: '#ffffff',
               }}
             />
           ))}

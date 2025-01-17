@@ -12,7 +12,9 @@ function SkillsText() {
     <>
       <h2>Skills & Technologies</h2>
       <p>
-        The following represent the skills and technologies I am most proficient in. It is not a complete list of all the technologies I have worked with.
+        The following represent the skills and technologies I am most proficient
+        in. It is not a complete list of all the technologies I have worked
+        with.
       </p>
     </>
   );

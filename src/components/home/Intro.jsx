@@ -37,13 +37,27 @@ export default function Intro() {
           <Typography component="h1" sx={{ fontSize: '2rem' }}>
             Meg Meyers
           </Typography>
-          <Typography component="h1" sx={{ fontSize: {xs: '3rem', sm: '4rem', md: '5rem' }, fontWeight: '600', lineHeight: '1' }}>
-          Software
+          <Typography
+            component="h1"
+            sx={{
+              fontSize: { xs: '3rem', sm: '4rem', md: '5rem' },
+              fontWeight: '600',
+              lineHeight: '1',
+            }}
+          >
+            Software
           </Typography>
-          <Typography component="h1" sx={{ fontSize: {xs: '3rem', sm: '4rem', md: '5rem' }, fontWeight: '600', lineHeight: '1'  }}>
-          Developer
+          <Typography
+            component="h1"
+            sx={{
+              fontSize: { xs: '3rem', sm: '4rem', md: '5rem' },
+              fontWeight: '600',
+              lineHeight: '1',
+            }}
+          >
+            Developer
           </Typography>
-        
+
           <h3 style={styles.connect} onClick={handleConnectClick}>
             Let's connect
             <Lottie animationData={animationData} style={styles.arrow} />

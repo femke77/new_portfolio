@@ -13,13 +13,13 @@ function ProjectText() {
     <>
       <h2>Projects</h2>
       <Typography variant="body1" gutterBottom>
-        A sampling of just a few of the many projects I have worked on from 2019-2025. Most projects are maintained and added to regularly. These projects represent my own unique code, not internet tutorials or AI. 
-        </Typography>
+        A sampling of just a few of the many projects I have worked on from
+        2019-2025. Most projects are maintained and added to regularly. These
+        projects represent my own unique code, not internet tutorials or AI.
+      </Typography>
     </>
   );
 }
-
-
 
 export default function Projects() {
   return (

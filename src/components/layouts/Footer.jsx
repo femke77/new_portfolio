@@ -1,5 +1,3 @@
-
-
 const Footer = () => {
   return (
     <footer style={{ textAlign: 'center', paddingTop: '3rem' }}>
@@ -7,4 +5,4 @@ const Footer = () => {
     </footer>
   );
 };
-export default Footer;  
+export default Footer;

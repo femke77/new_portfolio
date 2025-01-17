@@ -87,7 +87,13 @@
     "subtitle": "E-commerce site for a nail polish company.",
     "github": "https://github.com/femke77/cuccio-pro",
     "website": "https://cuccio-pro.herokuapp.com/",
-    "chips": ["ReactJS", "Sequelize", "ExpressJS", "Cloudinary API", "Google Auth API"]
+    "chips": [
+      "ReactJS",
+      "Sequelize",
+      "ExpressJS",
+      "Cloudinary API",
+      "Google Auth API"
+    ]
   },
   {
     "img": "portfolio",
@@ -97,5 +103,4 @@
     "website": "https://meg-meyers.netlify.app/",
     "chips": ["ReactJS", "MUI", "Lottie", "PWA", "Webpack"]
   }
-  
 ]
