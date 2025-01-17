@@ -21,7 +21,7 @@
     "subtitle": "Modern developer portfolio for a student.",
     "github": "https://github.com/femke77/adam_portfolio",
     "website": "https://adams-portfolio2.netlify.app/",
-    "chips": ["ReactJS", "GSAP", "MUI"]
+    "chips": ["ReactJS", "GSAP", "MUI", "PWA"]
   },
 
   {
@@ -92,7 +92,7 @@
   {
     "img": "portfolio",
     "title": "My Portfolio",
-    "subtitle": "My professional portfolio PWA.",
+    "subtitle": "My professional portfolio - PWA.",
     "github": "https://github.com/femke77/new_portfolio",
     "website": "https://meg-meyers.netlify.app/",
     "chips": ["ReactJS", "MUI", "Lottie", "PWA", "Webpack"]

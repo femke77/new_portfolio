@@ -1,22 +1,30 @@
-import Grid from '@mui/system/Unstable_Grid';
-import styled from '@mui/system/styled';
-import useScript from '../../hooks/UseScript';
+import Grid from "@mui/system/Unstable_Grid";
+import styled from "@mui/system/styled";
+import useScript from "../../hooks/UseScript";
 
-const Item = styled('div')(({ theme }) => ({
-  background: 'transparent',
+const Item = styled("div")(({ theme }) => ({
+  background: "transparent",
   padding: theme.spacing(1),
-  textAlign: 'left',
+  textAlign: "left",
 }));
 
 function AboutMe() {
   return (
     <>
-      <h2>About Me</h2>
+      <h2>About Me</h2>•
       <p>
-        Award winning full stack developer and instructor. Lorem ipsum dolor sit
-        amet consectetur adipisicing elit. Quidem quo voluptatem delectus eaque
-        dolor! Error, nam doloremque. Suscipit maxime sequi laboriosam iusto
-        aut, corporis amet harum mollitia fugit possimus autem.
+        I am an award winning full stack developer and educator with a passion
+        for creating web applications that solve real world problems. With my
+        strong background in computer science and software engineering, I am
+        able to build scalable and maintainable applications that are easy to
+        use and understand. My code is simple, clean and efficient, and I always
+        strive to deliver the best possible solution to my clients.
+        <br />
+        <br />I hold a BS degree in Computer Science with post graduate studies
+        in Machine Learning and Relational Databases. I have over 10 years of
+        experience in software development and have worked with a wide range of
+        technologies including JavaScript, TypeScript, React, Node.js, SQL,
+        NoSQL, Apollo GraphQL, and many more.
       </p>
       <br />
     </>
@@ -24,7 +32,7 @@ function AboutMe() {
 }
 
 export default function About() {
-  useScript('//cdn.credly.com/assets/utilities/embed.js');
+  useScript("//cdn.credly.com/assets/utilities/embed.js");
 
   return (
     <Grid
@@ -32,9 +40,9 @@ export default function About() {
       id="about"
       spacing={2}
       sx={(theme) => ({
-        [theme.breakpoints.only('xs')]: {
-          flexDirection: 'column',
-          justifyContent: 'center',
+        [theme.breakpoints.only("xs")]: {
+          flexDirection: "column",
+          justifyContent: "center",
         },
       })}
     >
@@ -42,14 +50,20 @@ export default function About() {
         <Item>
           <AboutMe />
         </Item>
-      </Grid>{' '}
-      <Grid item="true" xs={12} sm={4} md={3} sx={{paddingTop: {xs: "0rem", sm: "3rem", md:'3rem'}}} >
+      </Grid>{" "}
+      <Grid
+        item="true"
+        xs={12}
+        sm={4}
+        md={3}
+        sx={{ paddingTop: { xs: "0rem", sm: "3rem", md: "3rem" } }}
+      >
         <Item
           style={{
-            backgroundColor: 'white',
-            color: 'black',    
-            height: '260px',
-            width: '186px',
+            backgroundColor: "white",
+            color: "black",
+            height: "260px",
+            width: "186px",
           }}
         >
           <div
