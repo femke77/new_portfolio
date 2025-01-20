@@ -13,7 +13,7 @@
     "subtitle": "Lookup, create, save and make notes on recipes.",
     "github": "https://github.com/femke77/crave-recipes",
     "website": "https://safe-journey-98572.herokuapp.com/",
-    "chips": ["Handlebars", "Sequelize", "Bulma", "Passport"]
+    "chips": ["Handlebars", "Sequelize/MySQL", "Bulma", "Passport"]
   },
   {
     "img": "adam",
@@ -47,7 +47,7 @@
     "subtitle": "Find the pet of your dreams.",
     "github": "https://github.com/femke77/pet-adoption-full",
     "website": "https://pawsome-pets-a74380f52be3.herokuapp.com/",
-    "chips": ["UNDER CONSTRUCTION","Heroku", "React", "TailwindCSS", "Sequelize"]
+    "chips": ["UNDER CONSTRUCTION","Heroku", "React", "TailwindCSS", "Sequelize/PostgreSQL"]
   },
   {
     "img": "gmail",

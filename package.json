@@ -1,5 +1,5 @@
 {
-  "name": "Meg Portfolio",
+  "name": "meg-meyers-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -32,8 +32,6 @@
   "devDependencies": {
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
-    "@typescript-eslint/eslint-plugin": "^8.20.0",
-    "@typescript-eslint/parser": "^8.20.0",
     "@vitejs/plugin-react": "^4.0.0",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^10.0.1",
@@ -44,8 +42,6 @@
     "eslint-plugin-react-refresh": "^0.3.4",
     "globals": "^15.14.0",
     "rollup-plugin-analyzer": "^4.0.0",
-    "terser": "^5.30.4",
-    "typescript-eslint": "^8.20.0"
+    "terser": "^5.30.4"
   }
- 
 }
