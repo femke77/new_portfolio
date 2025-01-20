@@ -4,7 +4,7 @@
     "title": "Lucky Cat Ventures Tutoring",
     "subtitle": "A website for my tutoring business.",
     "github": "https://github.com/femke77/tutoring",
-    "website": "https://heartfelt-kulfi-3d2f28.netlify.app/",
+    "website": "https://lucky-cat-ventures-tutoring.netlify.app/",
     "chips": ["ReactJS", "MUI", "Calendly API"]
   },
   {
@@ -45,9 +45,9 @@
     "img": "pawsome",
     "title": "Pawsome Pets Adoption Services",
     "subtitle": "Find the pet of your dreams.",
-    "github": "https://github.com/femke77/pet-adoption",
-    "website": "https://pawsome-pets.netlify.app/",
-    "chips": ["Headless", "React", "TailwindCSS", "Sequelize"]
+    "github": "https://github.com/femke77/pet-adoption-full",
+    "website": "https://pawsome-pets-a74380f52be3.herokuapp.com/",
+    "chips": ["UNDER CONSTRUCTION","Heroku", "React", "TailwindCSS", "Sequelize"]
   },
   {
     "img": "gmail",

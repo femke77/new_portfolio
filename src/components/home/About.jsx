@@ -11,7 +11,7 @@ const Item = styled('div')(({ theme }) => ({
 function AboutMe() {
   return (
     <>
-      <h2>About Me</h2>•
+      <h2>About Me</h2>
       <p>
         I am an award winning full stack developer and educator with a passion
         for creating web applications that solve real world problems. With my

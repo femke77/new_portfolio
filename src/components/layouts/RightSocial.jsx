@@ -2,7 +2,7 @@ import Fab from '@mui/material/Fab';
 import Box from '@mui/material/Box';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import LayersIcon from '@mui/icons-material/Layers';
+// import LayersIcon from '@mui/icons-material/Layers';
 import SaveAltIcon from '@mui/icons-material/SaveAlt';
 import SendIcon from '@mui/icons-material/Send';
 import { styled } from '@mui/material/styles';
@@ -41,7 +41,7 @@ export default function RightSocial({ styles, placement, color, background }) {
       response.blob().then((blob) => {
         const fileURL = URL.createObjectURL(blob);
         //open(fileURL, '_blank')  //alternative to the a link opens embedded adobe viewer
-        let alink = document.createElement('a');
+        const alink = document.createElement('a');
         alink.href = fileURL;
         alink.download = 'meg-meyers-resume.pdf';
         alink.click();

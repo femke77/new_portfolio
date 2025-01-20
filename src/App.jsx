@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 import {
   createTheme,
   ThemeProvider,
-  responsiveFontSizes,
+  // responsiveFontSizes,
 } from '@mui/material/styles';
 import './App.css';
 import CssBaseline from '@mui/material/CssBaseline';
