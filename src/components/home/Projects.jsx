@@ -3,6 +3,7 @@ import styled from '@mui/system/styled';
 import ProjectCard from '../home/ProjectCard.jsx';
 import { Grow, Typography } from '@mui/material';
 import projectData from '../../utils/projectData.json';
+import { useRef, useState, useEffect } from 'react';
 
 const Item = styled('div')(({ theme }) => ({
   padding: theme.spacing(1),
@@ -22,12 +23,38 @@ function ProjectText() {
 }
 
 export default function Projects() {
+  const projectsRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+        // rootMargin: '125px 0px',
+      }
+    );
+
+    if (projectsRef.current) {
+      observer.observe(projectsRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <Grid
+      ref={projectsRef}
       container
       id='projects'
       spacing={4}
-      // justifyContent="center"
       sx={{ flexWrap: 'wrap', marginBottom: '3rem', marginTop: '-8rem' }}
     >
       <Grid item xs={12}>
@@ -36,8 +63,8 @@ export default function Projects() {
         </Item>
       </Grid>
       {projectData.map((project, index) => (
-        <Grow key={index} in={true} timeout={1500 * index}>
-          <Grid key={index} item xs={12} sm={6} md={6} lg={6} xl={4}>
+        <Grow key={index} in={isVisible} timeout={1200 * index}>
+          <Grid item xs={12} sm={6} md={6} lg={6} xl={4}>
             <ProjectCard {...project} />
           </Grid>
         </Grow>
