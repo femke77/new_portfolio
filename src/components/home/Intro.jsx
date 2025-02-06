@@ -45,7 +45,7 @@ export default function Intro() {
               lineHeight: '1',
             }}
           >
-            Software Engineer {""}
+            Software Engineer {">>>>>"}
           </Typography>
           <Typography
             component='h1'
