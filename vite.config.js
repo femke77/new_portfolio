@@ -43,7 +43,7 @@ export default defineConfig({
         clientsClaim: true,
         cleanupOutdatedCaches: true,
         navigateFallback: "/index.html",
-        immediateClaimClients: true,
+        // immediateClaimClients: true,
         sourcemap: true,
 
         buildId: () => Date.now().toString(), // Force new SW on each build
