@@ -55,7 +55,7 @@
     "subtitle": "Watch unlimited movies & TV shows.",
     "github": "https://github.com/femke77/movies-and-tv",
     "website": "https://movies-unlimited.netlify.app/",
-    "chips": ["NEW APP - UNDER CONSTRUCTION","ReactJS", "TailwindCSS", "TMDB API"]
+    "chips": ["NEW APP - UNDER CONSTRUCTION","ReactJS", "TailwindCSS 4.0", "TMDB API"]
   },
   {
     "img": "gmail",

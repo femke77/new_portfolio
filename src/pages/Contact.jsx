@@ -1,12 +1,17 @@
-import ContactForm from '../components/form/ContactForm.jsx';
-import { Box } from '@mui/material';
+import ContactForm from "../components/form/ContactForm.jsx";
+import { Box } from "@mui/material";
 
 export default function Contact() {
   return (
-    <>
-      <Box id='contact' sx={{ height: '90vh', marginTop: '3.5rem' }}>
-        <ContactForm />
-      </Box>
-    </>
+    <Box
+      id="contact"
+      sx={{
+        height: "90vh",
+        marginTop: "3.5rem",
+        marginLeft: { xs: "-5rem", sm: "0rem" },
+      }}
+    >
+      <ContactForm />
+    </Box>
   );
 }
