@@ -4,6 +4,15 @@ import App from './App';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import ErrorPage from './pages/Error';
+import { registerSW } from 'virtual:pwa-register';
+
+const updateSW = registerSW({
+  onNeedRefresh() {
+    if (confirm("A new version is available. Reload now?")) {
+      updateSW(); 
+    }
+  },
+});
 
 const router = createBrowserRouter([
   {
