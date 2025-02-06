@@ -47,7 +47,7 @@ export default defineConfig({
         sourcemap: true,
 
         cacheId: `my-app-${Date.now()}`, // Force new SW on each build
-        debug: true, 
+    
         runtimeCaching: [
           {
             urlPattern: ({ request }) => request.destination === "image",
