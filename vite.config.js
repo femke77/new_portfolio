@@ -46,7 +46,7 @@ export default defineConfig({
         // immediateClaimClients: true,
         sourcemap: true,
 
-        buildId: () => Date.now().toString(), // Force new SW on each build
+        cacheId: `my-app-${Date.now()}`, // Force new SW on each build
         debug: true, 
         runtimeCaching: [
           {
