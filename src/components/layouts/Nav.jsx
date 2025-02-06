@@ -4,7 +4,7 @@ import {
   useLocation,
   useNavigate,
 } from 'react-router-dom';
-import { Link as ScrollLink } from 'react-scroll';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import { useMediaQuery } from '@mui/material';
 import * as Scroll from 'react-scroll';
 import Drawer from '@mui/material/Drawer';
@@ -20,9 +20,10 @@ const Navigation = () => {
   const navigate = useNavigate();
   const scroller = Scroll.scroller;
 
-  const goToPageAndScroll = async (selector) => {
+  const goToPageAndScroll = async ( selector, page='/') => {
     setOpenDrawer(false);
-    await navigate('/');
+    await navigate(page);
+    selector === 'publications'? scroll.scrollTo('6000') :
     scroller.scrollTo(selector, {});
   };
 
@@ -309,13 +310,14 @@ const Navigation = () => {
             {location !== 'contact' ? (
               <>
                 <li>
-                  <Button color='white'>
-                    <RouterLink
-                      to='/contact'
-                      style={{ textDecoration: 'none', color: 'white' }}
-                    >
-                      Contact
-                    </RouterLink>
+                  {/* <RouterLink
+                    to='/contact'
+                    style={{ textDecoration: 'none', color: 'white' }}
+                  >
+                    Contact
+                  </RouterLink> */}
+                  <Button color='white'
+                    onClick={() => goToPageAndScroll('contact', '/contact')}>Contact
                   </Button>
                 </li>
                 <li>

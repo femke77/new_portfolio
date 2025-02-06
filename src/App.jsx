@@ -66,7 +66,7 @@ function App() {
         setInterval(() => {
           console.log('Checking for SW updates...');
           registration?.update().catch(console.error);
-        }, 21600000); // 6 hours
+        }, 3600000); 
       },
       onRegisterError(error) {
         console.error('SW registration failed:', error);
