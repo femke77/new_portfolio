@@ -1,9 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
-
 import analyze from "rollup-plugin-analyzer";
 import { VitePWA } from "vite-plugin-pwa";
 // https://vitejs.dev/config/
+
 export default defineConfig({
   build: {
     minify: "terser",
@@ -18,6 +18,8 @@ export default defineConfig({
       injectRegister: "script-defer",
       devOptions: {
         enabled: true,
+        type: "module",
+        navigateFallback: "index.html",
       },
       manifest: {
         name: "Meg Meyers Portfolio",
@@ -43,11 +45,8 @@ export default defineConfig({
         clientsClaim: true,
         cleanupOutdatedCaches: true,
         navigateFallback: "/index.html",
-        // immediateClaimClients: true,
         sourcemap: true,
-
-        cacheId: `my-app-${Date.now()}`, // Force new SW on each build
-    
+        cacheId: `app-${Date.now()}`, // Force new SW on each build
         runtimeCaching: [
           {
             urlPattern: ({ request }) => request.destination === "image",
@@ -58,6 +57,22 @@ export default defineConfig({
               expiration: {
                 maxEntries: 60,
                 maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days
+              },
+            },
+          },
+        ],
+        runtimeCaching: [
+          {
+            urlPattern: /^https:\/\/cdn\.credly\.com\/assets\/utilities\/embed\.js$/, // Match the script URL
+            handler: "StaleWhileRevalidate",
+            options: {
+              cacheName: "credly-script-cache",
+              cacheableResponse: {
+                statuses: [0, 200],
+              },
+              expiration: {
+                maxEntries: 1, 
+                maxAgeSeconds: 60 * 60 * 24 * 7, // 7 days
               },
             },
           },

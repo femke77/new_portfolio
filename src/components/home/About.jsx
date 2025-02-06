@@ -80,6 +80,7 @@ export default function About() {
             data-iframe-height='250'
             data-share-badge-id='10d343b0-6ceb-4b18-960c-a46c0b76c228'
             data-share-badge-host='https://www.credly.com'
+   
           ></div>
         </Item>
       </Grid>

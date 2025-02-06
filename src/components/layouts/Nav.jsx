@@ -21,7 +21,7 @@ const Navigation = () => {
       setOpenDrawer(false);
       await navigate(page);
       selector === "publications"
-        ? scroll.scrollTo("10000")
+        ? scroll.scrollTo("10000") //some issue with getting to publications section so this is a hacky fix
         : scroller.scrollTo(selector, {});
     } catch (error) {
       console.log(error.message);
