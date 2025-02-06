@@ -48,17 +48,23 @@ function App() {
 
   useEffect(() => {
     const updateSW = registerSW({
+      immediate: true,
       onNeedRefresh() {
+        console.log('SW - Need refresh');
         if (confirm('A new version is available. Do you want to reload the page?')) {
-          updateSW();
-          window.location.reload();
+          updateSW(true); // Force update
         }
       },
       onOfflineReady() {
-        console.log('The app is ready to work offline.');
+        console.log('SW - Offline ready');
       },
-      onRegistered(r) {
+      onRegistered(registration) {
         console.log('SW - Registered');
+        
+        // Check for updates every minute
+        setInterval(() => {
+          registration?.update();
+        }, 60000);
       },
       onRegisterError(error) {
         console.log('SW - Registration error:', error);

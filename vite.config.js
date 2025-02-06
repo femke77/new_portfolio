@@ -51,7 +51,10 @@ export default defineConfig({
             },
           },
         ],
-     
+        cleanupOutdatedCaches: true,
+        navigateFallback: '/index.html',
+        immediateClaimClients: true,
+        sourcemap: true,
       },
       
     }),
