@@ -37,16 +37,17 @@ export const StyledTooltip = styled(({ className, ...props }) => (
 
 export default function RightSocial({ styles, placement, color, background }) {
   const handleDownload = () => {
-    fetch(PDF).then((response) => {
-      response.blob().then((blob) => {
-        const fileURL = URL.createObjectURL(blob);
-        //open(fileURL, '_blank')  //alternative to the a link opens embedded adobe viewer
-        const alink = document.createElement('a');
-        alink.href = fileURL;
-        alink.download = 'meg-meyers-resume.pdf';
-        alink.click();
-      });
-    });
+    alert('Coming soon....')
+    // fetch(PDF).then((response) => {
+    //   response.blob().then((blob) => {
+    //     const fileURL = URL.createObjectURL(blob);
+    //     //open(fileURL, '_blank')  //alternative to the a link opens embedded adobe viewer
+    //     const alink = document.createElement('a');
+    //     alink.href = fileURL;
+    //     alink.download = 'meg-meyers-resume.pdf';
+    //     alink.click();
+    //   });
+    // });
   };
 
   return (

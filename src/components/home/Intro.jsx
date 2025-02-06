@@ -34,7 +34,7 @@ export default function Intro() {
     <Grid container={true} id='home' spacing={2}>
       <Grid xs={12} sm={10} md={8}>
         <Item sx={{ textAlign: 'left' }}>
-          <Typography component='h1' sx={{ fontSize: '2rem' }}>
+          <Typography component='h1' sx={{ fontSize: '2.5rem' }}>
             Meg Meyers
           </Typography>
           <Typography
@@ -45,7 +45,7 @@ export default function Intro() {
               lineHeight: '1',
             }}
           >
-            Software
+            Software {'>'}
           </Typography>
           <Typography
             component='h1'
@@ -53,9 +53,10 @@ export default function Intro() {
               fontSize: { xs: '3rem', sm: '4rem', md: '5rem' },
               fontWeight: '600',
               lineHeight: '1',
+              marginBottom: '1rem'
             }}
           >
-            Developer
+            {'>>'} Engineer 
           </Typography>
 
           <h3 style={styles.connect} onClick={handleConnectClick}>

@@ -46,9 +46,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Layout>
-          <main>
-            <Outlet />
-          </main>
+            <Outlet />   
         </Layout>
       </ThemeProvider>
     </>

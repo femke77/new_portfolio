@@ -301,7 +301,6 @@ const Navigation = () => {
               rotate: '-90deg',
               transformOrigin: 'center',
               position: 'fixed',
-              // top: '39.5rem',
               marginLeft: '20px',
               top: '50%',
               left: location !== "contact" ? '-240px' : "-193px",
