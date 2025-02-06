@@ -5,7 +5,7 @@
     "subtitle": "A website for my tutoring business.",
     "github": "https://github.com/femke77/tutoring",
     "website": "https://lucky-cat-ventures-tutoring.netlify.app/",
-    "chips": ["ReactJS", "MUI", "Calendly API"]
+    "chips": ["React", "MUI", "Calendly API"]
   },
   {
     "img": "crave",
@@ -21,7 +21,7 @@
     "subtitle": "Modern developer portfolio for a student.",
     "github": "https://github.com/femke77/adam_portfolio",
     "website": "https://adams-portfolio2.netlify.app/",
-    "chips": ["ReactJS", "GSAP", "MUI"]
+    "chips": ["React", "GSAP", "MUI"]
   },
 
   {
@@ -30,7 +30,7 @@
     "subtitle": "Simple blogging app with comments.",
     "github": "https://github.com/femke77/Apollo-Mongo-Blog",
     "website": "https://apollo-mongo-blogging.netlify.app/",
-    "chips": ["Headless", "React", "Apollo GraphQL", "TypeScript", "Mongoose"]
+    "chips": ["Headless Architecture", "Apollo GraphQL", "TypeScript", "Mongoose"]
   },
 
   {
@@ -47,7 +47,7 @@
     "subtitle": "Find the pet of your dreams.",
     "github": "https://github.com/femke77/pet-adoption-full",
     "website": "https://pawsome-pets-a74380f52be3.herokuapp.com/",
-    "chips": ["UNDER CONSTRUCTION","Heroku", "React", "TailwindCSS", "Sequelize/PostgreSQL"]
+    "chips": ["Optimisitic UI","Heroku", "React", "TailwindCSS", "Sequelize/PostgreSQL"]
   },
   {
     "img": "gmail",
