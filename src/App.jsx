@@ -48,7 +48,7 @@ function App() {
 
     const updateSW = registerSW({
       immediate: true,
-      // using autoUpdate so the below code, onNeedRefresh, isn't running. Might switch to prompt. 
+      // using autoUpdate so the below code, onNeedRefresh, isn't running. Might switch to prompt.
       onNeedRefresh() {
         console.log('Need refresh callback triggered!');
         if (
@@ -66,7 +66,7 @@ function App() {
         setInterval(() => {
           console.log('Checking for SW updates...');
           registration?.update().catch(console.error);
-        }, 3600000); 
+        }, 3600000);
       },
       onRegisterError(error) {
         console.error('SW registration failed:', error);

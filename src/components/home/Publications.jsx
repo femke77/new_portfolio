@@ -2,7 +2,7 @@ import publicationData from '../../utils/publicationData.json';
 
 const Publications = () => {
   return (
-    <div id='publications' style={{ paddingTop: '2rem', marginBottom: '3rem' }} >
+    <div id='publications' style={{ paddingTop: '2rem', marginBottom: '3rem' }}>
       <h2>Publications</h2>
       {publicationData.map((publication, index) => (
         <div

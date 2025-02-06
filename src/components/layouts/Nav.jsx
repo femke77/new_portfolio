@@ -1,95 +1,96 @@
-import * as React from 'react';
+import * as React from "react";
 import {
   NavLink as RouterLink,
   useLocation,
   useNavigate,
-} from 'react-router-dom';
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
-import { useMediaQuery } from '@mui/material';
-import * as Scroll from 'react-scroll';
-import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
-import MenuIcon from '@mui/icons-material/Menu';
-import Divider from '@mui/material/Divider';
-import RightSocial from './RightSocial.jsx';
-import { Box, Typography } from '@mui/material';
+} from "react-router-dom";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { useMediaQuery } from "@mui/material";
+import * as Scroll from "react-scroll";
+import Drawer from "@mui/material/Drawer";
+import Button from "@mui/material/Button";
+import MenuIcon from "@mui/icons-material/Menu";
+import Divider from "@mui/material/Divider";
+import RightSocial from "./RightSocial.jsx";
+import { Box, Typography } from "@mui/material";
 
 const Navigation = () => {
   const path = useLocation().pathname;
-  const location = path.split('/')[1];
+  const location = path.split("/")[1];
   const navigate = useNavigate();
   const scroller = Scroll.scroller;
 
-  const goToPageAndScroll = async ( selector, page='/') => {
+  const goToPageAndScroll = async (selector, page = "/") => {
     setOpenDrawer(false);
     await navigate(page);
-    selector === 'publications'? scroll.scrollTo('6000') :
-    scroller.scrollTo(selector, {});
+    selector === "publications"
+      ? scroll.scrollTo("6000")
+      : scroller.scrollTo(selector, {});
   };
 
   const styles = {
     rightSocials: {
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      marginTop: '3rem',
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      marginTop: "3rem",
     },
   };
 
   const [openDrawer, setOpenDrawer] = React.useState(false);
-  const isMobile = useMediaQuery('(max-width:900px)');
+  const isMobile = useMediaQuery("(max-width:900px)");
 
   return (
     <>
       {isMobile ? ( //mobile view
         <>
-          {location !== 'contact' ? ( //mobile view home page
+          {location !== "contact" ? ( //mobile view home page
             <div>
               <Button onClick={() => setOpenDrawer(true)}>
                 <MenuIcon
-                  size='large'
-                  edge='start'
-                  color='secondary'
-                  aria-label='menu'
-                  sx={{ position: 'fixed', left: '20px' }}
+                  size="large"
+                  edge="start"
+                  color="secondary"
+                  aria-label="menu"
+                  sx={{ position: "fixed", left: "20px" }}
                 />
               </Button>
               <Drawer
-                anchor='left'
+                anchor="left"
                 open={openDrawer}
                 disableRestoreFocus
                 onClose={() => setOpenDrawer(false)}
                 sx={{
-                  '& .MuiDrawer-paper': {
-                    width: '35%',
-                    backgroundColor: 'rgba(0, 0, 0, 0.7)',
-                    padding: '1.5rem',
-                    overflow: 'hidden',
+                  "& .MuiDrawer-paper": {
+                    width: "35%",
+                    backgroundColor: "rgba(0, 0, 0, 0.7)",
+                    padding: "1.5rem",
+                    overflow: "hidden",
                   },
                 }}
               >
                 <Box
                   sx={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    marginBottom: '1rem',
+                    display: "flex",
+                    justifyContent: "center",
+                    marginBottom: "1rem",
                   }}
                 >
                   <Typography
                     sx={{
-                      color: 'white',
-                      fontSize: '2rem',
-                      fontFamily: 'Water Brush',
+                      color: "white",
+                      fontSize: "2rem",
+                      fontFamily: "Water Brush",
                     }}
                   >
                     M
                   </Typography>
                   <Typography
                     sx={{
-                      color: 'white',
-                      fontSize: '2rem',
-                      paddingTop: '1.9rem',
-                      fontFamily: 'Water Brush',
+                      color: "white",
+                      fontSize: "2rem",
+                      paddingTop: "1.9rem",
+                      fontFamily: "Water Brush",
                     }}
                   >
                     M
@@ -97,18 +98,18 @@ const Navigation = () => {
                 </Box>
                 <ul
                   style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    padding: '0',
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    padding: "0",
                   }}
                 >
-                  <Divider variant='center' color='#ffffff' />
+                  <Divider variant="center" color="#ffffff" />
                   <li>
-                    {' '}
-                    <Button color='white'>
+                    {" "}
+                    <Button color="white">
                       <ScrollLink
-                        to='home'
+                        to="home"
                         spy={true}
                         smooth={true}
                         offset={-75}
@@ -120,9 +121,9 @@ const Navigation = () => {
                     </Button>
                   </li>
                   <li>
-                    <Button color='white'>
+                    <Button color="white">
                       <ScrollLink
-                        to='about'
+                        to="about"
                         spy={true}
                         smooth={true}
                         offset={-75}
@@ -134,9 +135,9 @@ const Navigation = () => {
                     </Button>
                   </li>
                   <li>
-                    <Button color='white'>
+                    <Button color="white">
                       <ScrollLink
-                        to='projects'
+                        to="projects"
                         spy={true}
                         smooth={true}
                         offset={-75}
@@ -148,9 +149,9 @@ const Navigation = () => {
                     </Button>
                   </li>
                   <li>
-                    <Button color='white'>
+                    <Button color="white">
                       <ScrollLink
-                        to='publications'
+                        to="publications"
                         spy={true}
                         smooth={true}
                         offset={-75}
@@ -162,11 +163,11 @@ const Navigation = () => {
                     </Button>
                   </li>
                   <li>
-                    <Button color='white'>
+                    <Button color="white">
                       <RouterLink
-                        to='/contact'
+                        to="/contact"
                         onClick={() => setOpenDrawer(false)}
-                        style={{ textDecoration: 'none', color: 'white' }}
+                        style={{ textDecoration: "none", color: "white" }}
                       >
                         Contact
                       </RouterLink>
@@ -175,8 +176,8 @@ const Navigation = () => {
                   <li>
                     <RightSocial
                       styles={styles.rightSocials}
-                      placement={'right'}
-                      color={'secondary'}
+                      placement={"right"}
+                      color={"secondary"}
                     />
                   </li>
                 </ul>
@@ -187,49 +188,49 @@ const Navigation = () => {
             <div>
               <Button onClick={() => setOpenDrawer(true)}>
                 <MenuIcon
-                  size='large'
-                  edge='start'
-                  color='secondary'
-                  aria-label='menu'
-                  sx={{ position: 'fixed', left: '20px' }}
+                  size="large"
+                  edge="start"
+                  color="secondary"
+                  aria-label="menu"
+                  sx={{ position: "fixed", left: "20px" }}
                 />
               </Button>
               <Drawer
-                anchor='left'
+                anchor="left"
                 open={openDrawer}
                 disableRestoreFocus
                 onClose={() => setOpenDrawer(false)}
                 sx={{
-                  '& .MuiDrawer-paper': {
-                    width: '35%',
-                    backgroundColor: 'rgba(0, 0, 0, 0.7)',
-                    padding: '1.5rem',
-                    overflow: 'hidden',
+                  "& .MuiDrawer-paper": {
+                    width: "35%",
+                    backgroundColor: "rgba(0, 0, 0, 0.7)",
+                    padding: "1.5rem",
+                    overflow: "hidden",
                   },
                 }}
               >
                 <Box
                   sx={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    marginBottom: '1rem',
+                    display: "flex",
+                    justifyContent: "center",
+                    marginBottom: "1rem",
                   }}
                 >
                   <Typography
                     sx={{
-                      color: 'white',
-                      fontSize: '2rem',
-                      fontFamily: 'Water Brush',
+                      color: "white",
+                      fontSize: "2rem",
+                      fontFamily: "Water Brush",
                     }}
                   >
                     M
                   </Typography>
                   <Typography
                     sx={{
-                      color: 'white',
-                      fontSize: '2rem',
-                      paddingTop: '1.9rem',
-                      fontFamily: 'Water Brush',
+                      color: "white",
+                      fontSize: "2rem",
+                      paddingTop: "1.9rem",
+                      fontFamily: "Water Brush",
                     }}
                   >
                     M
@@ -237,42 +238,42 @@ const Navigation = () => {
                 </Box>
                 <ul
                   style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    padding: '0',
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    padding: "0",
                   }}
                 >
-                  <Divider variant='center' color='#ffffff' />
+                  <Divider variant="center" color="#ffffff" />
                   <li>
-                    {' '}
+                    {" "}
                     <Button
-                      color='white'
-                      onClick={() => goToPageAndScroll('home')}
+                      color="white"
+                      onClick={() => goToPageAndScroll("home")}
                     >
                       Home
                     </Button>
                   </li>
                   <li>
                     <Button
-                      color='white'
-                      onClick={() => goToPageAndScroll('about')}
+                      color="white"
+                      onClick={() => goToPageAndScroll("about")}
                     >
                       About
                     </Button>
                   </li>
                   <li>
                     <Button
-                      color='white'
-                      onClick={() => goToPageAndScroll('projects')}
+                      color="white"
+                      onClick={() => goToPageAndScroll("projects")}
                     >
                       Projects
                     </Button>
                   </li>
                   <li>
                     <Button
-                      color='white'
-                      onClick={() => goToPageAndScroll('publications')}
+                      color="white"
+                      onClick={() => goToPageAndScroll("publications")}
                     >
                       Publications
                     </Button>
@@ -281,8 +282,8 @@ const Navigation = () => {
                   <li>
                     <RightSocial
                       styles={styles.rightSocials}
-                      placement={'right'}
-                      color={'secondary'}
+                      placement={"right"}
+                      color={"secondary"}
                     />
                   </li>
                 </ul>
@@ -293,21 +294,21 @@ const Navigation = () => {
       ) : (
         // desktop view
         <nav
-          id='navigation'
-          style={{ display: 'flex', alignItems: 'center', height: '100vh' }}
+          id="navigation"
+          style={{ display: "flex", alignItems: "center", height: "100vh" }}
         >
           <ul
             style={{
-              display: 'flex',
-              rotate: '-90deg',
-              transformOrigin: 'center',
-              position: 'fixed',
-              marginLeft: '20px',
-              top: '50%',
-              left: location !== 'contact' ? '-240px' : '-193px',
+              display: "flex",
+              rotate: "-90deg",
+              transformOrigin: "center",
+              position: "fixed",
+              marginLeft: "20px",
+              top: "50%",
+              left: location !== "contact" ? "-240px" : "-193px",
             }}
           >
-            {location !== 'contact' ? (
+            {location !== "contact" ? (
               <>
                 <li>
                   {/* <RouterLink
@@ -316,14 +317,17 @@ const Navigation = () => {
                   >
                     Contact
                   </RouterLink> */}
-                  <Button color='white'
-                    onClick={() => goToPageAndScroll('contact', '/contact')}>Contact
+                  <Button
+                    color="white"
+                    onClick={() => goToPageAndScroll("contact", "/contact")}
+                  >
+                    Contact
                   </Button>
                 </li>
                 <li>
-                  <Button color='white'>
+                  <Button color="white">
                     <ScrollLink
-                      to='publications'
+                      to="publications"
                       spy={true}
                       smooth={true}
                       offset={-75}
@@ -334,9 +338,9 @@ const Navigation = () => {
                   </Button>
                 </li>
                 <li>
-                  <Button color='white'>
+                  <Button color="white">
                     <ScrollLink
-                      to='projects'
+                      to="projects"
                       spy={true}
                       smooth={true}
                       offset={-75}
@@ -347,9 +351,9 @@ const Navigation = () => {
                   </Button>
                 </li>
                 <li>
-                  <Button color='white'>
+                  <Button color="white">
                     <ScrollLink
-                      to='about'
+                      to="about"
                       spy={true}
                       smooth={true}
                       offset={-75}
@@ -360,10 +364,10 @@ const Navigation = () => {
                   </Button>
                 </li>
                 <li>
-                  {' '}
-                  <Button color='white'>
+                  {" "}
+                  <Button color="white">
                     <ScrollLink
-                      to='home'
+                      to="home"
                       spy={true}
                       smooth={true}
                       offset={-75}
@@ -378,32 +382,32 @@ const Navigation = () => {
               <>
                 <li>
                   <Button
-                    color='white'
-                    onClick={() => goToPageAndScroll('publications')}
+                    color="white"
+                    onClick={() => goToPageAndScroll("publications")}
                   >
                     Publications
                   </Button>
                 </li>
                 <li>
                   <Button
-                    color='white'
-                    onClick={() => goToPageAndScroll('projects')}
+                    color="white"
+                    onClick={() => goToPageAndScroll("projects")}
                   >
                     Projects
                   </Button>
                 </li>
                 <li>
                   <Button
-                    color='white'
-                    onClick={() => goToPageAndScroll('about')}
+                    color="white"
+                    onClick={() => goToPageAndScroll("about")}
                   >
                     About
                   </Button>
                 </li>
                 <li>
                   <Button
-                    color='white'
-                    onClick={() => goToPageAndScroll('home')}
+                    color="white"
+                    onClick={() => goToPageAndScroll("home")}
                   >
                     Home
                   </Button>
