@@ -8,7 +8,7 @@ export default function Contact() {
       sx={{
         height: "90vh",
         marginTop: "3.5rem",
-        marginLeft: { xs: "-5rem", sm: "0rem" },
+        marginLeft: { xs: "-3rem", sm: "0rem" },
       }}
     >
       <ContactForm />
