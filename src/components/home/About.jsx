@@ -56,7 +56,15 @@ export default function About() {
         xs={12}
         sm={4}
         md={3}
-        sx={{ paddingTop: { xs: '0rem', sm: '3rem', md: '3rem', display: "flex", justifyContent: "center" } }}
+        sx={{
+          paddingTop: {
+            xs: '0rem',
+            sm: '3rem',
+            md: '3rem',
+            display: 'flex',
+            justifyContent: 'center',
+          },
+        }}
       >
         <Item
           style={{
@@ -64,7 +72,6 @@ export default function About() {
             color: 'black',
             height: '260px',
             width: '186px',
-        
           }}
         >
           <div

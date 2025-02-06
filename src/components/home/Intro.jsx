@@ -45,7 +45,7 @@ export default function Intro() {
               lineHeight: '1',
             }}
           >
-            Software Engineer {">>>>>"}
+            Software Engineer {''}
           </Typography>
           <Typography
             component='h1'
@@ -53,10 +53,10 @@ export default function Intro() {
               fontSize: { xs: '3rem', sm: '4rem', md: '5rem' },
               fontWeight: '600',
               lineHeight: '1',
-              marginBottom: '1rem'
+              marginBottom: '1rem',
             }}
           >
-        {/* Engineer  */}
+            {/* Engineer  */}
           </Typography>
 
           <h3 style={styles.connect} onClick={handleConnectClick}>

@@ -37,7 +37,7 @@ export const StyledTooltip = styled(({ className, ...props }) => (
 
 export default function RightSocial({ styles, placement, color, background }) {
   const handleDownload = () => {
-    alert('Coming soon....')
+    alert('Coming soon....');
     // fetch(PDF).then((response) => {
     //   response.blob().then((blob) => {
     //     const fileURL = URL.createObjectURL(blob);

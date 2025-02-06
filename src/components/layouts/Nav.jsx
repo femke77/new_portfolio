@@ -303,7 +303,7 @@ const Navigation = () => {
               position: 'fixed',
               marginLeft: '20px',
               top: '50%',
-              left: location !== "contact" ? '-240px' : "-193px",
+              left: location !== 'contact' ? '-240px' : '-193px',
             }}
           >
             {location !== 'contact' ? (

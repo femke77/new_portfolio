@@ -29,7 +29,7 @@ export default function Projects() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setIsVisible(true);
             observer.unobserve(entry.target);
@@ -37,10 +37,9 @@ export default function Projects() {
         });
       },
       {
-    
         threshold: 0.1,
-        rootMargin: '50px 0px'
-      }
+        rootMargin: '50px 0px',
+      },
     );
 
     if (projectsRef.current) {
@@ -56,15 +55,15 @@ export default function Projects() {
       container
       id='projects'
       spacing={4}
-      sx={{ 
-        flexWrap: 'wrap', 
+      sx={{
+        flexWrap: 'wrap',
         marginBottom: '3rem',
         marginTop: {
-          xs: '1rem',  // Mobile devices
-          sm: '1rem',  // Tablets
+          xs: '1rem', // Mobile devices
+          sm: '1rem', // Tablets
           md: '-8rem', // Desktop and up
         },
-        minHeight: '100px'
+        minHeight: '100px',
       }}
     >
       <Grid item xs={12}>
@@ -73,12 +72,7 @@ export default function Projects() {
         </Item>
       </Grid>
       {projectData.map((project, index) => (
-        <Grow 
-          key={index} 
-          in={isVisible} 
-          timeout={1200 * index}
-          appear={true}
-        >
+        <Grow key={index} in={isVisible} timeout={1200 * index} appear={true}>
           <Grid item xs={12} sm={6} md={6} lg={6} xl={4}>
             <ProjectCard {...project} />
           </Grid>

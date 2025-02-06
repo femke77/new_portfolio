@@ -10,8 +10,6 @@ import Layout from './components/layouts/Layout';
 import { useEffect } from 'react';
 import { registerSW } from 'virtual:pwa-register';
 
-
-
 const theme = createTheme({
   palette: {
     // background: {
@@ -45,35 +43,36 @@ const theme = createTheme({
 });
 
 function App() {
-
   useEffect(() => {
     console.log('Setting up SW registration...');
 
-const updateSW = registerSW({
-  immediate: true,
-  onNeedRefresh() {
-    console.log('Need refresh callback triggered!');
-    if (confirm('A new version is available. Do you want to reload the page?')) {
-      console.log('User confirmed update');
-      updateSW(true).catch(console.error);
-    }
-  },
-  onOfflineReady() {
-    console.log('SW - Offline ready');
-  },
-  onRegistered(registration) {
-    console.log('SW Registration successful:', registration);
-    
-    // Add periodic checks for updates
-    setInterval(() => {
-      console.log('Checking for SW updates...');
-      registration?.update().catch(console.error);
-    }, 10000); // Check every 10 seconds during debugging
-  },
-  onRegisterError(error) {
-    console.error('SW registration failed:', error);
-  }
-});
+    const updateSW = registerSW({
+      immediate: true,
+      onNeedRefresh() {
+        console.log('Need refresh callback triggered!');
+        if (
+          confirm('A new version is available. Do you want to reload the page?')
+        ) {
+          console.log('User confirmed update');
+          updateSW(true).catch(console.error);
+        }
+      },
+      onOfflineReady() {
+        console.log('SW - Offline ready');
+      },
+      onRegistered(registration) {
+        console.log('SW Registration successful:', registration);
+
+        // Add periodic checks for updates
+        setInterval(() => {
+          console.log('Checking for SW updates...');
+          registration?.update().catch(console.error);
+        }, 10000);
+      },
+      onRegisterError(error) {
+        console.error('SW registration failed:', error);
+      },
+    });
   }, []);
 
   return (
@@ -81,7 +80,7 @@ const updateSW = registerSW({
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Layout>
-            <Outlet />   
+          <Outlet />
         </Layout>
       </ThemeProvider>
     </>
