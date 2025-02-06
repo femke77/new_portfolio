@@ -39,6 +39,8 @@ export default defineConfig({
       },
       workbox: {
         globPatterns: ['**/*.{js,css,html,png,svg,jpg,pdf,jsx}'],
+        skipWaiting: true,
+        clientsClaim: true,
         runtimeCaching: [
           {
             urlPattern: ({ request }) => request.destination === 'image',
@@ -49,8 +51,7 @@ export default defineConfig({
             },
           },
         ],
-        skipWaiting: true,
-        clientsClaim: true,
+     
       },
       
     }),

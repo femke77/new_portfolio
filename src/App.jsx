@@ -11,12 +11,19 @@ import { registerSW } from 'virtual:pwa-register';
 
 const updateSW = registerSW({
   onNeedRefresh() {
-    if (confirm("A new version is available. Reload now?")) {
-      updateSW(); 
+    // This will be called when a new version of the SW is available
+    console.log('New version available!');
+    
+    // Prompt the user to refresh the page
+    if (confirm('A new version is available. Do you want to reload the page?')) {
+      updateSW(); // Activates the new service worker
+      window.location.reload(); // Forces the page to reload
     }
   },
+  onOfflineReady() {
+    console.log('The app is ready to work offline.');
+  },
 });
-
 
 const theme = createTheme({
   palette: {
