@@ -7,6 +7,16 @@ import {
 import './App.css';
 import CssBaseline from '@mui/material/CssBaseline';
 import Layout from './components/layouts/Layout';
+import { registerSW } from 'virtual:pwa-register';
+
+const updateSW = registerSW({
+  onNeedRefresh() {
+    if (confirm("A new version is available. Reload now?")) {
+      updateSW(); 
+    }
+  },
+});
+
 
 const theme = createTheme({
   palette: {
