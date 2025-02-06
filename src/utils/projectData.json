@@ -5,7 +5,7 @@
     "subtitle": "A website for my tutoring business.",
     "github": "https://github.com/femke77/tutoring",
     "website": "https://lucky-cat-ventures-tutoring.netlify.app/",
-    "chips": ["React", "MUI", "Calendly API"]
+    "chips": ["ReactJS", "MUI", "Calendly API"]
   },
   {
     "img": "crave",
@@ -21,7 +21,7 @@
     "subtitle": "Modern developer portfolio for a student.",
     "github": "https://github.com/femke77/adam_portfolio",
     "website": "https://adams-portfolio2.netlify.app/",
-    "chips": ["React", "GSAP", "MUI"]
+    "chips": ["ReactJS", "GSAP", "MUI"]
   },
 
   {
@@ -47,14 +47,14 @@
     "subtitle": "Find the pet of your dreams.",
     "github": "https://github.com/femke77/pet-adoption-full",
     "website": "https://pawsome-pets-a74380f52be3.herokuapp.com/",
-    "chips": ["Optimisitic UI","Heroku", "React", "TailwindCSS", "Sequelize/PostgreSQL"]
+    "chips": ["Optimisitic UI","Heroku", "ReactJS", "TailwindCSS", "Sequelize/PostgreSQL"]
   },
   {
     "img": "movies",
     "title": "Movies Unlimited",
     "subtitle": "Watch unlimited movies & TV shows.",
     "github": "https://github.com/femke77/movies-and-tv",
-    "website": "",
+    "website": "https://movies-unlimited.netlify.app/",
     "chips": ["NEW APP - UNDER CONSTRUCTION","ReactJS", "TailwindCSS", "TMDB API"]
   },
   {
@@ -63,7 +63,7 @@
     "subtitle": "This script automates deletion of old emails.",
     "github": "https://github.com/femke77/google-delete-tm-userscript",
     "website": "",
-    "chips": ["Tampermonkey", "JavaScript"]
+    "chips": ["Tampermonkey", "Userscripts", "JavaScript"]
   },
   {
     "img": "rps",
