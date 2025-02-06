@@ -7,23 +7,10 @@ import {
 import './App.css';
 import CssBaseline from '@mui/material/CssBaseline';
 import Layout from './components/layouts/Layout';
+import { useEffect } from 'react';
 import { registerSW } from 'virtual:pwa-register';
 
-const updateSW = registerSW({
-  onNeedRefresh() {
-    // This will be called when a new version of the SW is available
-    console.log('New version available!');
-    
-    // Prompt the user to refresh the page
-    if (confirm('A new version is available. Do you want to reload the page?')) {
-      updateSW(); // Activates the new service worker
-      window.location.reload(); // Forces the page to reload
-    }
-  },
-  onOfflineReady() {
-    console.log('The app is ready to work offline.');
-  },
-});
+
 
 const theme = createTheme({
   palette: {
@@ -58,6 +45,27 @@ const theme = createTheme({
 });
 
 function App() {
+
+  useEffect(() => {
+    const updateSW = registerSW({
+      onNeedRefresh() {
+        if (confirm('A new version is available. Do you want to reload the page?')) {
+          updateSW();
+          window.location.reload();
+        }
+      },
+      onOfflineReady() {
+        console.log('The app is ready to work offline.');
+      },
+      onRegistered(r) {
+        console.log('SW - Registered');
+      },
+      onRegisterError(error) {
+        console.log('SW - Registration error:', error);
+      },
+    });
+  }, []);
+
   return (
     <>
       <ThemeProvider theme={theme}>
