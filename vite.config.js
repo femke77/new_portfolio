@@ -63,7 +63,7 @@ export default defineConfig({
         ],
         runtimeCaching: [
           {
-            urlPattern: /^https:\/\/cdn\.credly\.com\/assets\/utilities\/embed\.js$/, // Match the script URL
+            urlPattern: /^https:\/\/cdn\.credly\.com\/assets\/utilities\/embed\.js$/, 
             handler: "StaleWhileRevalidate",
             options: {
               cacheName: "credly-script-cache",
