@@ -24,7 +24,7 @@ const Navigation = () => {
     setOpenDrawer(false);
     await navigate(page);
     selector === "publications"
-      ? scroll.scrollTo("6000")
+      ? scroll.scrollTo("10000")
       : scroller.scrollTo(selector, {});
   };
 
@@ -163,15 +163,17 @@ const Navigation = () => {
                     </Button>
                   </li>
                   <li>
-                    <Button color="white">
-                      <RouterLink
+                    {/* <RouterLink
                         to="/contact"
                         onClick={() => setOpenDrawer(false)}
                         style={{ textDecoration: "none", color: "white" }}
                       >
                         Contact
-                      </RouterLink>
-                    </Button>
+                      </RouterLink> */}
+                    <Button
+                      color="white"
+                      onClick={() => goToPageAndScroll("contact", "/contact")}
+                    >Contact</Button>
                   </li>
                   <li>
                     <RightSocial
