@@ -304,7 +304,7 @@ const Navigation = () => {
               // top: '39.5rem',
               marginLeft: '20px',
               top: '50%',
-              left: '-240px',
+              left: location !== "contact" ? '-240px' : "-193px",
             }}
           >
             {location !== 'contact' ? (
