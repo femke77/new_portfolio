@@ -47,29 +47,33 @@ const theme = createTheme({
 function App() {
 
   useEffect(() => {
-    const updateSW = registerSW({
-      immediate: true,
-      onNeedRefresh() {
-        console.log('SW - Need refresh');
-        if (confirm('A new version is available. Do you want to reload the page?')) {
-          updateSW(true); // Force update
-        }
-      },
-      onOfflineReady() {
-        console.log('SW - Offline ready');
-      },
-      onRegistered(registration) {
-        console.log('SW - Registered');
-        
-        // Check for updates every minute
-        setInterval(() => {
-          registration?.update();
-        }, 60000);
-      },
-      onRegisterError(error) {
-        console.log('SW - Registration error:', error);
-      },
-    });
+    console.log('Setting up SW registration...');
+
+const updateSW = registerSW({
+  immediate: true,
+  onNeedRefresh() {
+    console.log('Need refresh callback triggered!');
+    if (confirm('A new version is available. Do you want to reload the page?')) {
+      console.log('User confirmed update');
+      updateSW(true).catch(console.error);
+    }
+  },
+  onOfflineReady() {
+    console.log('SW - Offline ready');
+  },
+  onRegistered(registration) {
+    console.log('SW Registration successful:', registration);
+    
+    // Add periodic checks for updates
+    setInterval(() => {
+      console.log('Checking for SW updates...');
+      registration?.update().catch(console.error);
+    }, 10000); // Check every 10 seconds during debugging
+  },
+  onRegisterError(error) {
+    console.error('SW registration failed:', error);
+  }
+});
   }, []);
 
   return (
