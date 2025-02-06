@@ -50,6 +50,14 @@
     "chips": ["Optimisitic UI","Heroku", "React", "TailwindCSS", "Sequelize/PostgreSQL"]
   },
   {
+    "img": "movies",
+    "title": "Movies Unlimited",
+    "subtitle": "Watch unlimited movies & TV shows.",
+    "github": "https://github.com/femke77/movies-and-tv",
+    "website": "",
+    "chips": ["NEW APP - UNDER CONSTRUCTION","ReactJS", "TailwindCSS", "TMDB API"]
+  },
+  {
     "img": "gmail",
     "title": "Tampermonkey Gmail Delete",
     "subtitle": "This script automates deletion of old emails.",

@@ -10,3 +10,4 @@ export { default as rps } from './rps.png';
 export { default as kitty } from './kitty.png';
 export { default as gmail } from './gmail.png';
 export { default as pawsome } from './pawsome.png';
+export { default as movies } from './movies-unlimited.png';
