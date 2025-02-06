@@ -41,15 +41,11 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,png,svg,jpg,pdf,jsx}'],
         runtimeCaching: [
           {
-            urlPattern: ({ url }) => {
-              return url.pathname.startsWith('/src/assets');
-            },
+            urlPattern: ({ request }) => request.destination === 'image',
             handler: 'StaleWhileRevalidate',
             options: {
               cacheName: 'assets-cache',
-              cacheableResponse: {
-                statuses: [0, 200],
-              },
+              cacheableResponse: { statuses: [0, 200] },
             },
           },
         ],
