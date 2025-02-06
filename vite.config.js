@@ -53,7 +53,10 @@ export default defineConfig({
             },
           },
         ],
+        skipWaiting: true,
+        clientsClaim: true,
       },
+      
     }),
   ],
   server: {
