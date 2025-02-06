@@ -44,7 +44,7 @@ export default defineConfig({
             urlPattern: ({ url }) => {
               return url.pathname.startsWith('/src/assets');
             },
-            handler: 'CacheFirst',
+            handler: 'StaleWhileRevalidate',
             options: {
               cacheName: 'assets-cache',
               cacheableResponse: {
