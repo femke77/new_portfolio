@@ -1,6 +1,6 @@
 import Grid from '@mui/system/Unstable_Grid';
 import styled from '@mui/system/styled';
-import useScript from '../../hooks/useScript';
+import useScript from '../../hooks/UseScript';
 
 const Item = styled('div')(({ theme }) => ({
   background: 'transparent',
