@@ -105,7 +105,7 @@ const Navigation = () => {
                   }}
                 >
                   <Divider variant='center' color='#ffffff' />
-                  <li>
+                  {/* <li>
                     {' '}
                     <Button color='white'>
                       <ScrollLink
@@ -119,7 +119,7 @@ const Navigation = () => {
                         Home
                       </ScrollLink>
                     </Button>
-                  </li>
+                  </li> */}
                   <li>
                     <Button color='white'>
                       <ScrollLink
@@ -249,7 +249,7 @@ const Navigation = () => {
                   }}
                 >
                   <Divider variant='center' color='#ffffff' />
-                  <li>
+                  {/* <li>
                     {' '}
                     <Button
                       color='white'
@@ -257,7 +257,7 @@ const Navigation = () => {
                     >
                       Home
                     </Button>
-                  </li>
+                  </li> */}
                   <li>
                     <Button
                       color='white'
@@ -309,7 +309,7 @@ const Navigation = () => {
               position: 'fixed',
               marginLeft: '20px',
               top: '50%',
-              left: location !== 'contact' ? '-240px' : '-193px',
+              left: location !== 'contact' ? '-205px' : '-139px',
             }}
           >
             {location !== 'contact' ? (
@@ -363,7 +363,7 @@ const Navigation = () => {
                     </ScrollLink>
                   </Button>
                 </li>
-                <li>
+                {/* <li>
                   {' '}
                   <Button color='white'>
                     <ScrollLink
@@ -376,7 +376,7 @@ const Navigation = () => {
                       Home
                     </ScrollLink>
                   </Button>
-                </li>
+                </li> */}
               </>
             ) : (
               <>
@@ -404,14 +404,14 @@ const Navigation = () => {
                     About
                   </Button>
                 </li>
-                <li>
+                {/* <li>
                   <Button
                     color='white'
                     onClick={() => goToPageAndScroll('home')}
                   >
                     Home
                   </Button>
-                </li>
+                </li> */}
               </>
             )}
           </ul>

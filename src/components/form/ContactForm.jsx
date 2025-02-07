@@ -119,6 +119,7 @@ const ContactForm = () => {
                 onChange={handleChange}
                 margin='normal'
                 color='primary'
+                autoComplete='name'
               />
             </Grid>
             <Grid item>
@@ -131,6 +132,7 @@ const ContactForm = () => {
                 onChange={handleChange}
                 margin='normal'
                 color='primary'
+                autoComplete='organization'
               />
             </Grid>
             <Grid item>
@@ -144,6 +146,7 @@ const ContactForm = () => {
                 name='email'
                 onChange={handleChange}
                 margin='normal'
+                autoComplete='email'
               />
             </Grid>
             <Grid item>
