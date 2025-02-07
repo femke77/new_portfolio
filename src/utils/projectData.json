@@ -8,12 +8,12 @@
     "chips": ["ReactJS", "MUI", "Calendly API"]
   },
   {
-    "img": "crave",
-    "title": "Crave Recipies",
-    "subtitle": "Lookup, create, save and make notes on recipes.",
-    "github": "https://github.com/femke77/crave-recipes",
-    "website": "https://safe-journey-98572.herokuapp.com/",
-    "chips": ["Handlebars", "Sequelize/MySQL", "Bulma", "Passport"]
+    "img": "movies",
+    "title": "Movies Unlimited",
+    "subtitle": "Watch unlimited movies & TV shows.",
+    "github": "https://github.com/femke77/movies-and-tv",
+    "website": "https://movies-unlimited.netlify.app/",
+    "chips": ["NEW APP - UNDER CONSTRUCTION","ReactJS", "TailwindCSS 4.0", "TMDB API"]
   },
   {
     "img": "adam",
@@ -23,7 +23,14 @@
     "website": "https://adams-portfolio2.netlify.app/",
     "chips": ["ReactJS", "GSAP", "MUI"]
   },
-
+  {
+    "img": "crave",
+    "title": "Crave Recipies",
+    "subtitle": "Lookup, create, save and make notes on recipes.",
+    "github": "https://github.com/femke77/crave-recipes",
+    "website": "https://safe-journey-98572.herokuapp.com/",
+    "chips": ["Handlebars", "Sequelize/MySQL", "Bulma", "Passport"]
+  },
   {
     "img": "blog",
     "title": "Blogging Site",
@@ -48,14 +55,6 @@
     "github": "https://github.com/femke77/pet-adoption-full",
     "website": "https://pawsome-pets-a74380f52be3.herokuapp.com/",
     "chips": ["Optimisitic UI","Heroku", "ReactJS", "TailwindCSS", "Sequelize/PostgreSQL"]
-  },
-  {
-    "img": "movies",
-    "title": "Movies Unlimited",
-    "subtitle": "Watch unlimited movies & TV shows.",
-    "github": "https://github.com/femke77/movies-and-tv",
-    "website": "https://movies-unlimited.netlify.app/",
-    "chips": ["NEW APP - UNDER CONSTRUCTION","ReactJS", "TailwindCSS 4.0", "TMDB API"]
   },
   {
     "img": "gmail",
