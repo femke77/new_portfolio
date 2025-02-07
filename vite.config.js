@@ -40,7 +40,8 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globPatterns: ["**/*.{js,css,html,png,svg,jpg,pdf,jsx}"], //precache everything (32Mb)
+        globPatterns: ["**/*.{js,css,html,png,svg,jpg,pdf,jsx}"], //precache everything (38Mb)
+        maximumFileSizeToCacheInBytes: 32 * 1024 * 1024,
         skipWaiting: true,
         clientsClaim: true,
         cleanupOutdatedCaches: true,
@@ -60,10 +61,8 @@ export default defineConfig({
               },
             },
           },
-        ],
-        runtimeCaching: [
           {
-            urlPattern: /^https:\/\/cdn\.credly\.com\/assets\/utilities\/embed\.js$/,  //runtime cache credly script
+            urlPattern: /^https:\/\/cdn\.credly\.com\/assets\/utilities\/embed\.js$/, //runtime cache credly script
             handler: "StaleWhileRevalidate",
             options: {
               cacheName: "credly-script-cache",
@@ -71,7 +70,7 @@ export default defineConfig({
                 statuses: [0, 200],
               },
               expiration: {
-                maxEntries: 3, 
+                maxEntries: 3,
                 maxAgeSeconds: 60 * 60 * 24 * 7, // 7 days
               },
             },
