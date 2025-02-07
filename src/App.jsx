@@ -63,10 +63,10 @@ function App() {
       },
       onRegistered(registration) {
         console.log('SW Registration successful:', registration);
-        setInterval(() => {
-          console.log('Checking for SW updates...');
-          registration?.update().catch(console.error);
-        }, 3600000);
+        // setInterval(() => {
+        //   console.log('Checking for SW updates...');
+        //   registration?.update().catch(console.error);
+        // }, 3600000);
       },
       onRegisterError(error) {
         console.error('SW registration failed:', error);
