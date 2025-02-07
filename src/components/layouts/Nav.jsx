@@ -308,8 +308,8 @@ const Navigation = () => {
               transformOrigin: 'center',
               position: 'fixed',
               marginLeft: '20px',
-              top: '50%',
-              left: location !== 'contact' ? '-205px' : '-139px',
+              top: location !== 'contact' ? '50%' : '45%',
+              left: location !== 'contact' ? '-218px' : '-139px',
             }}
           >
             {location !== 'contact' ? (

@@ -6,7 +6,7 @@ export default function Contact() {
   useEffect(() => {
     requestAnimationFrame(() => {
       window.scrollTo({
-        top: 0,
+        top: 40,
         left: 0,
         behavior: 'smooth',
       });

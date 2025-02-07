@@ -67,13 +67,10 @@ if (!self.define) {
     });
   };
 }
-define(['./workbox-d550b9b7'], (function (workbox) { 'use strict';
+define(['./workbox-238817ed'], (function (workbox) { 'use strict';
 
-  self.addEventListener('message', event => {
-    if (event.data && event.data.type === 'SKIP_WAITING') {
-      self.skipWaiting();
-    }
-  });
+  self.skipWaiting();
+  workbox.clientsClaim();
 
   /**
    * The precacheAndRoute() method efficiently caches and responds to
@@ -84,22 +81,22 @@ define(['./workbox-d550b9b7'], (function (workbox) { 'use strict';
     "url": "registerSW.js",
     "revision": "3ca0b8505b4bec776b69afdba2768812"
   }, {
-    "url": "index.html",
-    "revision": "0.k647n0umv78"
+    "url": "/index.html",
+    "revision": "0.lffklis6ov"
   }], {});
   workbox.cleanupOutdatedCaches();
-  workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("index.html"), {
+  workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("/index.html"), {
     allowlist: [/^\/$/]
   }));
-  workbox.registerRoute(({
-    url
-  }) => {
-    return url.pathname.startsWith("/src/assets");
-  }, new workbox.CacheFirst({
-    "cacheName": "assets-cache",
+  workbox.registerRoute(/^https:\/\/cdn\.credly\.com\/assets\/utilities\/embed\.js$/, new workbox.StaleWhileRevalidate({
+    "cacheName": "credly-script-cache",
     plugins: [new workbox.CacheableResponsePlugin({
       statuses: [0, 200]
+    }), new workbox.ExpirationPlugin({
+      maxEntries: 3,
+      maxAgeSeconds: 604800
     })]
   }), 'GET');
 
 }));
+//# sourceMappingURL=sw.js.map
