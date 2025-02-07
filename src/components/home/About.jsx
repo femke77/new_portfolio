@@ -22,9 +22,10 @@ function AboutMe() {
         <br />
         <br />I hold a BS degree in Computer Science with post graduate studies
         in Machine Learning and Relational Databases. I have over 10 years of
-        experience in software development and have worked with a wide range of
-        technologies including JavaScript, TypeScript, React, Node.js, SQL,
-        NoSQL, Apollo GraphQL, and many more.
+        experience coding both professionally and as a hobby. I have worked with
+        many types of technologies and languages, including but not limited to
+        the skills below. Pushing myself to learn new things is something I
+        enjoy and I am always looking for new challenges to tackle.
       </p>
       <br />
     </>

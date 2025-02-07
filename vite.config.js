@@ -48,9 +48,11 @@ export default defineConfig({
         navigateFallback: "/index.html",
         sourcemap: true,
         // cacheId: `app-${Date.now()}`, // Force new SW on each build
+
+        // no images are runtime cached as they are in the precache
         runtimeCaching: [
           {
-            urlPattern: ({ request }) => request.destination === "image", //runtime cache images
+            urlPattern: ({ request }) => request.destination === "image", 
             handler: "StaleWhileRevalidate",
             options: {
               cacheName: "assets-cache",
