@@ -18,7 +18,7 @@
   {
     "img": "adam",
     "title": "Adam's Portfolio",
-    "subtitle": "Modern developer portfolio for a student.",
+    "subtitle": "Modern developer portfolio for a student. Turned over to the student to finish. Showcases CSS animation skills.",
     "github": "https://github.com/femke77/adam_portfolio",
     "website": "https://adams-portfolio2.netlify.app/",
     "chips": ["ReactJS", "GSAP", "MUI"]

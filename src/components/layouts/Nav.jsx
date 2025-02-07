@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { useMediaQuery } from "@mui/material";
 import * as Scroll from "react-scroll";
@@ -315,17 +315,15 @@ const Navigation = () => {
             {location !== "contact" ? (
               <>
                 <li>
-                  {/* <RouterLink
+                  <Button  color="white">
+                  <RouterLink
                     to='/contact'
                     style={{ textDecoration: 'none', color: 'white' }}
                   >
                     Contact
-                  </RouterLink> */}
-                  <Button
-                    color="white"
-                    onClick={() => goToPageAndScroll("contact", "/contact")}
-                  >
-                    Contact
+                  </RouterLink>
+                  
+                 
                   </Button>
                 </li>
                 <li>

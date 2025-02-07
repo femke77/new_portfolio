@@ -15,7 +15,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: "autoUpdate",
-      injectRegister: "script-defer",
+      injectRegister: "auto",
       devOptions: {
         enabled: true,
         type: "module",
@@ -40,16 +40,16 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globPatterns: ["**/*.{js,css,html,png,svg,jpg,pdf,jsx}"],
+        globPatterns: ["**/*.{js,css,html,png,svg,jpg,pdf,jsx}"], //precache everything (32Mb)
         skipWaiting: true,
         clientsClaim: true,
         cleanupOutdatedCaches: true,
         navigateFallback: "/index.html",
         sourcemap: true,
-        cacheId: `app-${Date.now()}`, // Force new SW on each build
+        // cacheId: `app-${Date.now()}`, // Force new SW on each build
         runtimeCaching: [
           {
-            urlPattern: ({ request }) => request.destination === "image",
+            urlPattern: ({ request }) => request.destination === "image", //runtime cache images
             handler: "StaleWhileRevalidate",
             options: {
               cacheName: "assets-cache",
@@ -63,7 +63,7 @@ export default defineConfig({
         ],
         runtimeCaching: [
           {
-            urlPattern: /^https:\/\/cdn\.credly\.com\/assets\/utilities\/embed\.js$/, 
+            urlPattern: /^https:\/\/cdn\.credly\.com\/assets\/utilities\/embed\.js$/,  //runtime cache credly script
             handler: "StaleWhileRevalidate",
             options: {
               cacheName: "credly-script-cache",
@@ -71,7 +71,7 @@ export default defineConfig({
                 statuses: [0, 200],
               },
               expiration: {
-                maxEntries: 1, 
+                maxEntries: 3, 
                 maxAgeSeconds: 60 * 60 * 24 * 7, // 7 days
               },
             },
