@@ -8,7 +8,7 @@ export default defineConfig({
   build: {
     minify: "terser",
     rollupOptions: {
-      plugins: [analyze()],
+      plugins: [process.env.NODE_ENV === 'production' ? null : analyze()].filter(Boolean),
     },
   },
   plugins: [
@@ -62,7 +62,7 @@ export default defineConfig({
             },
           },
           {
-            urlPattern: /^https:\/\/cdn\.credly\.com\/assets\/utilities\/embed\.js$/, //runtime cache credly script
+            urlPattern: ({ url }) => url.href.includes('credly.com'), 
             handler: "StaleWhileRevalidate",
             options: {
               cacheName: "credly-script-cache",
