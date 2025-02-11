@@ -82,13 +82,26 @@ define(['./workbox-238817ed'], (function (workbox) { 'use strict';
     "revision": "3ca0b8505b4bec776b69afdba2768812"
   }, {
     "url": "/index.html",
-    "revision": "0.lffklis6ov"
+    "revision": "0.c0g943qg1b8"
   }], {});
   workbox.cleanupOutdatedCaches();
   workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("/index.html"), {
     allowlist: [/^\/$/]
   }));
-  workbox.registerRoute(/^https:\/\/cdn\.credly\.com\/assets\/utilities\/embed\.js$/, new workbox.StaleWhileRevalidate({
+  workbox.registerRoute(({
+    request
+  }) => request.destination === "image", new workbox.StaleWhileRevalidate({
+    "cacheName": "assets-cache",
+    plugins: [new workbox.CacheableResponsePlugin({
+      statuses: [0, 200]
+    }), new workbox.ExpirationPlugin({
+      maxEntries: 60,
+      maxAgeSeconds: 604800
+    })]
+  }), 'GET');
+  workbox.registerRoute(({
+    url
+  }) => url.href.includes("credly.com"), new workbox.StaleWhileRevalidate({
     "cacheName": "credly-script-cache",
     plugins: [new workbox.CacheableResponsePlugin({
       statuses: [0, 200]

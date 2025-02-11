@@ -25,5 +25,5 @@ export { default as Docker } from './docker.png';
 export { default as Cypress } from './Cypress.png';
 export { default as CSS3 } from './css3.png';
 export { default as Jest } from './Jest.png';
-export { default as Webpack } from './Webpack.png';
+export { default as Netlify } from './netlify-2.png';
 export { default as 'Github Actions' } from './github-actions.png';

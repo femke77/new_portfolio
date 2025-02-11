@@ -10,6 +10,7 @@ import Divider from '@mui/material/Divider';
 import RightSocial from './RightSocial.jsx';
 import { Box, Typography } from '@mui/material';
 
+// TODO buttons around nav link not ok
 const Navigation = () => {
   const path = useLocation().pathname;
   const location = path.split('/')[1];
