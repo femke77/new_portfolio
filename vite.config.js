@@ -53,13 +53,13 @@ export default defineConfig({
         runtimeCaching: [
           {
             urlPattern: ({ request }) => request.destination === "image", 
-            handler: "StaleWhileRevalidate",
+            handler: "CacheFirst",  //images don't really change much so just get what's in the cache
             options: {
               cacheName: "assets-cache",
               cacheableResponse: { statuses: [0, 200] },
               expiration: {
                 maxEntries: 60,
-                maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days
+                maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
               },
             },
           },

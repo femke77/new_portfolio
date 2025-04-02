@@ -28,4 +28,5 @@ export { default as Jest } from './Jest.png';
 export { default as Netlify } from './netlify-2.png';
 export { default as LangChain } from './langchain.svg';
 export { default as Zustand } from './zus.svg';
+export { default as Workbox } from './workbox.svg';
 export { default as 'Github Actions' } from './github-actions.png';
