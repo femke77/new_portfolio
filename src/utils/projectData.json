@@ -1,19 +1,19 @@
 [
   {
+    "img": "movies",
+    "title": "BingeBox24/7",
+    "subtitle": "Find, save & stream unlimited movies & TV shows.",
+    "github": "https://github.com/femke77/movies-and-tv",
+    "website": "https://movies-unlimited.netlify.app/",
+    "chips": ["ReactJS", "TailwindCSS 4.0", "TMDB API", "Zustand", "React Query"]
+  },
+  {
     "img": "tutoring",
     "title": "Lucky Cat Ventures Tutoring",
     "subtitle": "A website for my tutoring business.",
     "github": "https://github.com/femke77/tutoring",
     "website": "https://lucky-cat-ventures-tutoring.netlify.app/",
     "chips": ["ReactJS", "MUI", "Calendly API"]
-  },
-  {
-    "img": "movies",
-    "title": "Movies Unlimited",
-    "subtitle": "Watch unlimited movies & TV shows.",
-    "github": "https://github.com/femke77/movies-and-tv",
-    "website": "https://movies-unlimited.netlify.app/",
-    "chips": ["NEW APP - UNDER CONSTRUCTION","ReactJS", "TailwindCSS 4.0", "TMDB API"]
   },
   {
     "img": "adam",
