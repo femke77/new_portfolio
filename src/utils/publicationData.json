@@ -1,5 +1,9 @@
 [
   {
+    "title": "Getting Started with Zustand State Management for React",
+    "link": "https://dev.to/finalgirl321/getting-started-with-zustand-state-management-for-react-5786"
+  },
+  {
     "title": "Iframes and Back Navigation - How to Fix the Browser History Bug",
     "link": "https://dev.to/finalgirl321/iframes-and-back-navigation-how-to-fix-the-browser-history-bug-871"
   },
@@ -18,9 +22,5 @@
   {
     "title": "Advanced JavaScript Interview Questions - NaN",
     "link": "https://dev.to/finalgirl321/lets-talk-about-js-nan-advanced-js-interview-question-3b7a"
-  },
-  {
-    "title": "Getting Started with Zustand State Management for React",
-    "link": "https://dev.to/finalgirl321/getting-started-with-zustand-state-management-for-react-5786"
   }
 ]
