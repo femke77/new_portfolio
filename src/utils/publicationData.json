@@ -1,5 +1,9 @@
 [
   {
+    "title": "Making Zustand Persist Play Nice with Async Storage & React Suspense, Part 1/2",
+    "link": "https://dev.to/finalgirl321/making-zustand-persist-play-nice-with-async-storage-react-suspense-part-12-58l1"
+  },
+  {
     "title": "Getting Started with Zustand State Management for React",
     "link": "https://dev.to/finalgirl321/getting-started-with-zustand-state-management-for-react-5786"
   },
