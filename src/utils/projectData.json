@@ -1,7 +1,7 @@
 [
   {
     "img": "hostguest",
-    "title": "HostGuest",
+    "title": "Host Guest",
     "subtitle": "A homestay marketplace connecting international students with trusted host families.",
     "website": "https://hostguest.net",
     "chips": ["Laravel", "MySQL", "AWS", "Stripe", "Redis", "Firebase", "TailwindCSS 4.0", "Cloudinary API"]
