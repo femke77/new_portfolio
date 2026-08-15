@@ -25,7 +25,8 @@ const styles = {
   icons: {
     display: 'flex',
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
     padding: '5px',
   },
 };
@@ -41,16 +42,22 @@ export default function ProjectCard({
   return (
     <Card style={styles.card} elevation={5}>
       <div style={styles.icons}>
-        <Button
-          size='small'
-          sx={{ color: '#ffffff' }}
-          aria-label='github repository'
-          href={github}
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <GitHubIcon />
-        </Button>
+        {github && (
+          <Button
+            size='small'
+            sx={{
+              color: '#ffffff',
+              marginRight: 'auto',
+            }}
+            aria-label='github repository'
+            href={github}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <GitHubIcon />
+          </Button>
+        )}
+
         {website &&
           title &&
           (title !== 'My Portfolio' ? (
@@ -78,6 +85,7 @@ export default function ProjectCard({
             </Button>
           ))}
       </div>
+
       <div>
         {img && (
           <CardMedia
@@ -88,6 +96,7 @@ export default function ProjectCard({
           />
         )}
       </div>
+
       <CardContent>
         <Typography
           gutterBottom
@@ -97,8 +106,10 @@ export default function ProjectCard({
         >
           {title}
         </Typography>
+
         <Typography variant='body2'>{subtitle}</Typography>
       </CardContent>
+
       <CardActions>
         <div>
           {chips.map((chip, index) => (

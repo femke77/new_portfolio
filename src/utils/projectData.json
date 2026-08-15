@@ -1,5 +1,12 @@
 [
   {
+    "img": "hostguest",
+    "title": "HostGuest",
+    "subtitle": "A homestay marketplace connecting international students with trusted host families.",
+    "website": "https://hostguest.net",
+    "chips": ["Laravel", "MySQL", "AWS", "Stripe", "Redis", "Firebase", "TailwindCSS 4.0", "Cloudinary API"]
+  },
+  {
     "img": "movies",
     "title": "BingeBox24/7",
     "subtitle": "Find, save & stream unlimited movies & TV shows.",
