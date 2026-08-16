@@ -35,7 +35,7 @@ export default function Intro() {
       <Grid xs={12} sm={10} md={8}>
         <Item sx={{ textAlign: 'left' }}>
           <Typography component='h1' sx={{ fontSize: '2.5rem' }}>
-            Meg Meyers
+            Meg Courtney
           </Typography>
           <Typography
             component='h1'
