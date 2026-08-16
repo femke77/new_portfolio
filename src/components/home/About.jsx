@@ -13,19 +13,33 @@ function AboutMe() {
     <>
       <h2>About Me</h2>
       <p>
-        I am an award winning full stack developer and educator with a passion
-        for creating web applications that solve real world problems. With my
-        strong background in computer science and software engineering, I am
-        able to build scalable and maintainable applications that are easy to
-        use and understand. My code is simple, clean and efficient, and I always
-        strive to deliver the best possible solution to my clients.
-        <br />
-        <br />I hold a BS degree in Computer Science with post graduate studies
-        in Machine Learning and Relational Databases. I have over 10 years of
-        experience coding both professionally and as a hobby. I have worked with
-        many types of technologies and languages, including but not limited to
-        the skills below. Pushing myself to learn new things is something I
-        enjoy and I am always looking for new challenges to tackle.
+        I’m a senior software engineer, product manager, and educator with a
+        background in building and improving production software from the ground
+        up. My work spans full-stack development, cloud infrastructure,
+        databases, payments, testing, performance engineering, and product
+        architecture, with a growing focus on applied artificial intelligence.
+        <br /> <br />I hold a B.S. in Computer Science, graduating cum laude
+        with a 3.94 GPA, and completed advanced coursework in machine learning,
+        data mining, algorithms, databases, operating systems, security, and
+        related areas. Earlier in my career, I helped develop an AI-driven
+        nutrition application using computer vision, earning second place in
+        CSUN’s AI Jam and subsequent NSF I-Corps funding. <br /> <br /> Today, I
+        lead engineering and technical product development for Host Guest, a
+        production homestay marketplace, where I have re-architected inherited
+        systems, built payment and trust-and-safety infrastructure, managed AWS
+        environments, expanded automated testing, and improved core product
+        conversion. I also spent several years teaching and mentoring
+        software-development students through edX, where I received a
+        performance award for both top metrics and the greatest number of
+        students supported. <br /> <br /> Outside of my professional work, I
+        enjoy building products independently. BingeBox is a full-stack React
+        and Node.js application that gave me the opportunity to go deeply into
+        performance, state management, caching, responsive design, and user
+        experience, ultimately raising its Lighthouse performance score from 67
+        to 99. <br /> <br />
+        I’m most energized by difficult technical problems, thoughtful product
+        design, and learning technologies deeply enough to understand not just
+        how to use them, but why they work.
       </p>
       <br />
     </>
